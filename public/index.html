@@ -472,10 +472,13 @@
           ]}"
       >
         <div
-          class="group h-64 w-full lg:w-3/12 bg-cover"
+          class="h-64 w-full lg:w-3/12 bg-cover"
           x-bind:style="`background-image: url('${project.image}')`"
+          x-on:click="project.showCaption = true"
+          x-on:mouseenter="project.showCaption = true"
+          x-on:mouseleave="project.showCaption = false"
         >
-          <div class="relative hidden group group-hover:block w-full h-full">
+          <div x-show="project.showCaption" class="relative w-full h-full">
             <a
               x-bind:href="project.href"
               target="_blank"
