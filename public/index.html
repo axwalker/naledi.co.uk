@@ -489,14 +489,17 @@
                   class="absolute w-full h-full bg-primary-700 opacity-90"
                 ></div>
                 <div
-                  class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-5"
+                  class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-6"
                 >
-                  <h5 class="text-2xl leading-6 font-medium text-white">
-                    <span x-text="project.client"></span>
-                  </h5>
-                  <p class="text-md mt-2 text-base leading-6 text-white">
-                    <span x-text="project.summary"></span>
-                  </p>
+                  <h5
+                    x-text="project.client"
+                    class="text-2xl leading-6 font-bold text-white"
+                  ></h5>
+
+                  <p
+                    x-text="project.summary"
+                    class="text-md mt-2 text-base font-light leading-6 text-white"
+                  ></p>
                 </div>
               </a>
             </div>
