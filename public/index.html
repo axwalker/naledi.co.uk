@@ -478,27 +478,29 @@
           x-on:mouseenter="project.showCaption = true"
           x-on:mouseleave="project.showCaption = false"
         >
-          <div x-show="project.showCaption" class="relative w-full h-full">
-            <a
-              x-bind:href="project.href"
-              target="_blank"
-              class="absolute w-full h-full"
-            >
-              <div
-                class="absolute w-full h-full bg-primary-700 opacity-90"
-              ></div>
-              <div
-                class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-5"
+          <template x-if="project.showCaption">
+            <div class="relative w-full h-full">
+              <a
+                x-bind:href="project.href"
+                target="_blank"
+                class="absolute w-full h-full"
               >
-                <h5 class="text-2xl leading-6 font-medium text-white">
-                  <span x-text="project.client"></span>
-                </h5>
-                <p class="text-md mt-2 text-base leading-6 text-white">
-                  <span x-text="project.summary"></span>
-                </p>
-              </div>
-            </a>
-          </div>
+                <div
+                  class="absolute w-full h-full bg-primary-700 opacity-90"
+                ></div>
+                <div
+                  class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-5"
+                >
+                  <h5 class="text-2xl leading-6 font-medium text-white">
+                    <span x-text="project.client"></span>
+                  </h5>
+                  <p class="text-md mt-2 text-base leading-6 text-white">
+                    <span x-text="project.summary"></span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </template>
         </div>
       </template>
     </div>
