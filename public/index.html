@@ -471,7 +471,7 @@
           ]}"
       >
         <div
-          class="h-64 w-full sm:w-6/12 md:w-4/12 lg:w-3/12 bg-cover"
+          class="h-64 w-full sm:w-6/12 md:w-4/12 lg:w-3/12 bg-cover mx-4 my-2 sm:m-0 shadow-md sm:shadow-none rounded-lg sm:rounded-none" 
           x-bind:style="`background-image: url('${project.image}')`"
           x-on:click="project.showCaption = true"
           x-on:mouseenter="project.showCaption = true"
@@ -485,19 +485,19 @@
                 class="absolute w-full h-full"
               >
                 <div
-                  class="absolute w-full h-full bg-primary-700 opacity-90"
+                  class="absolute w-full h-full bg-primary-700 opacity-90 rounded-lg sm:rounded-none"
                 ></div>
                 <div
-                  class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-6"
+                  class="absolute w-full h-full flex flex-col justify-center items-center z-10 text-center px-4 sm:px-6"
                 >
                   <h5
                     x-text="project.client"
-                    class="text-2xl leading-6 font-bold text-white"
+                    class="text-lg sm:text-2xl leading-6 font-bold text-white"
                   ></h5>
 
                   <p
                     x-text="project.summary"
-                    class="text-md mt-2 text-base font-light leading-6 text-white"
+                    class="text-base mt-2 font-light leading-6 text-white"
                   ></p>
                 </div>
               </a>
