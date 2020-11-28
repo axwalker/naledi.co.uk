@@ -9,7 +9,8 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "serve": "live-server --port=3000 --open=./public",
+    "tailwind:build": "npx tailwind build styles.css -o public/output.css",
+    "serve": "npm run tailwind:build && live-server --port=3000 --open=./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
