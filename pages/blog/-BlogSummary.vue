@@ -62,6 +62,13 @@
 </template>
 
 <script>
+// Hackily include colours used for categories
+// purge-ignore: text-blue-800 bg-blue-100 border-blue-600 to-blue-500 via-blue-500 from-blue-500 bg-blue-500
+// purge-ignore: text-green-800 bg-green-100 border-green-600 to-green-500 via-green-500 from-green-500 bg-green-500
+// purge-ignore: text-yellow-800 bg-yellow-100 border-yellow-600 to-yellow-500 via-yellow-500 from-yellow-500 bg-yellow-500
+// purge-ignore: text-red-800 bg-red-100 border-red-600 to-red-500 via-red-500 from-red-500 bg-red-500
+// purge-ignore: text-purple-800 bg-purple-100 border-purple-600 to-purple-500 via-purple-500 from-purple-500 bg-purple-500
+
 import { format } from 'date-fns'
 import { colours } from './-config'
 
