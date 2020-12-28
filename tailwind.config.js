@@ -1,41 +1,41 @@
-// tailwind.config.js
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
-          100: '#EBF4F6',
-          200: '#CEE3E9',
-          300: '#B1D2DB',
-          400: '#76B0C0',
-          500: '#3B8EA5',
-          600: '#358095',
-          700: '#235563',
-          800: '#1B404A',
-          900: '#122B32',
+          50: '#f0f9fb',
+          100: '#daf7f8',
+          200: '#adeef1',
+          300: '#75e1eb',
+          400: '#30c8e2',
+          500: '#11a8d5',
+          600: '#0d87be',
+          700: '#126c99',
+          800: '#135371',
+          900: '#124358',
         },
       },
       opacity: {
-        '10': '.1',
-        '20': '.2',
-        '30': '.3',
-        '40': '.4',
-        '50': '.5',
-        '60': '.6',
-        '70': '.7',
-        '80': '.8',
-        '90': '.9',
-        '100': '1',
-      }
-    }
+        10: '.1',
+        20: '.2',
+        30: '.3',
+        40: '.4',
+        50: '.5',
+        60: '.6',
+        70: '.7',
+        80: '.8',
+        90: '.9',
+        100: '1',
+      },
+    },
   },
   variants: {
     display: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  plugins: [require("@tailwindcss/ui")]
-};
+  plugins: [require('@tailwindcss/typography')],
+}
