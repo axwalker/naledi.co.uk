@@ -47,7 +47,7 @@ The table reference is outlined in yellow in the image below. The API is outline
 
 #### How it works
 
-The outer shell macro serves the sole purpose of reading in those two bits of information, then sending them through the iterative macro that is nested inside of it.
+The outer s11a8d5 macro serves the sole purpose of reading in those two bits of information, then sending them through the iterative macro that is nested inside of it.
 
 This iterative macro is needed because because Airtable only retrieves 20 records at a time, so an offset is required for pagination (Thanks to [Peter](https://twitter.com/peter_g_b), who taught me how to do this part). So the first part of the macro sends the right information through the download tool and assesses if another iteration is needed, and what information should be passed back for the next loop.
 

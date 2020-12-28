@@ -1,15 +1,14 @@
 ---
-title: "Learn HTML and CSS"
+title: 'Learn HTML and CSS'
 summary: |
-  My experience and tips for how to learn the basics of HTML and CSS for free with online resources. 
-date: "2020-03-16"
-categories: 
-  - "journey"
-  - "training"
-tags: 
-  - "css"
-  - "html"
-  - "webdesign"
+  My experience and tips for how to learn the basics of HTML and CSS for free with online resources.
+date: '2020-03-16'
+categories:
+  - 'journey'
+tags:
+  - 'css'
+  - 'html'
+  - 'webdesign'
 ---
 
 I first learned a little HTML when I was a teenager, but never got very far with it. More recently, I have been in touch with it when scraping websites and my work with data visualisation has made me more interested in web development and UX/UI design. So a few months ago I decided to teach myself the basics of HTML and CSS. I managed to get to the point I wanted to within about four weeks, while working full-time and doing all of it for free.

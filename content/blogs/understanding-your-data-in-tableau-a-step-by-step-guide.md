@@ -1,11 +1,10 @@
 ---
-title: "Understanding your data in Tableau - A step by step guide"
+title: 'Understanding your data in Tableau - A step by step guide'
 summary: |
   Tips for how to familiarise yourself with your data to generate meaningful insights in Tableau.
-date: "2019-06-28"
-categories: 
-  - "tableau"
-  - "training"
+date: '2019-06-28'
+categories:
+  - 'tableau'
 ---
 
 Tableau is a great tool to create charts at impressive speeds. But with this trend of fast analytics, and a focus on impressive visuals, the data checking process and thus accuracy aspect is sometimes be neglected. Fundamentally, you need to understand your data in order to make an effective dashboard
@@ -38,7 +37,7 @@ First look at the raw data to get a general overview of the fields. Sometimes th
 
 ### Step 2 - Start asking questions
 
-Using Tableau, explore the data to find first insights. There are likely hundreds of ways you can combine the fields in the data, and it might take some time until you find a combination that is meaningful. Some of the things you can do are:  
+Using Tableau, explore the data to find first insights. There are likely hundreds of ways you can combine the fields in the data, and it might take some time until you find a combination that is meaningful. Some of the things you can do are:
 
 - Break down your continuous measures with the different dimensions
 - Look for correlations between your continuous measures by creating scatterplots

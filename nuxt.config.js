@@ -41,6 +41,16 @@ export default {
     '@nuxt/content',
   ],
 
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const { time } = require('reading-time')(document.text)
+
+        document.readingTime = time
+      }
+    },
+  },
+
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
 
@@ -49,5 +59,31 @@ export default {
 
   googleAnalytics: {
     id: 'UA-161391703-1',
+  },
+
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        if (document.querySelector(to.hash)) {
+          return window.scrollTo({
+            top: document.querySelector(to.hash).offsetTop,
+            behavior: 'smooth',
+          })
+        } else {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve(
+                window.scrollTo({
+                  top: document.querySelector(to.hash).offsetTop,
+                  behavior: 'smooth',
+                })
+              )
+            }, 500)
+          })
+        }
+      } else {
+        return { x: 0, y: 0 }
+      }
+    },
   },
 }

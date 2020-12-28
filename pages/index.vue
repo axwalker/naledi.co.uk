@@ -20,20 +20,20 @@
           </p>
           <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
             <div class="shadow rounded-3xl">
-              <a
-                href="#"
+              <nuxt-link
+                to="#portfolio"
                 class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-3xl bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
               >
                 See my portfolio
-              </a>
+              </nuxt-link>
             </div>
             <div class="mt-3 shadow rounded-3xl sm:mt-0 sm:ml-3">
-              <a
-                href="#"
+              <nuxt-link
+                to="#contact"
                 class="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-primary-100 rounded-3xl text-primary-600 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
               >
                 Get in touch
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -186,9 +186,9 @@
       </div>
     </div>
 
-    <div class="my-8 shadow-lg sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="my-8 sm:shadow-lg sm:mx-auto sm:w-full sm:max-w-md">
       <div
-        class="px-4 py-8 bg-white border border-gray-100 shadow sm:rounded-lg sm:px-10"
+        class="px-4 py-8 bg-white sm:border sm:border-gray-100 sm:shadow sm:rounded-lg sm:px-10"
       >
         <form action="https://formspree.io/mlenykay" method="POST">
           <div>

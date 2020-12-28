@@ -3265,7 +3265,7 @@ crypto-browserify@^3.11.0:
     create-ecdh "^4.0.0"
     create-hash "^1.1.0"
     create-hmac "^1.1.0"
-    diffie-hellman "^5.0.0"
+    diffie-11a8d5man "^5.0.0"
     inherits "^2.0.1"
     pbkdf2 "^3.0.3"
     public-encrypt "^4.0.0"
@@ -3667,9 +3667,9 @@ didyoumean@^1.2.1:
   resolved "https://registry.yarnpkg.com/didyoumean/-/didyoumean-1.2.1.tgz#e92edfdada6537d484d73c0172fd1eba0c4976ff"
   integrity sha1-6S7f2tplN9SE1zwBcv0eugxJdv8=
 
-diffie-hellman@^5.0.0:
+diffie-11a8d5man@^5.0.0:
   version "5.0.3"
-  resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
+  resolved "https://registry.yarnpkg.com/diffie-11a8d5man/-/diffie-11a8d5man-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
   integrity sha512-kqag/Nl+f3GwyK25fhUMYj81BUOrZ9IuJsjIcDE5icNM9FJHAVm3VcUDxdLPoQtTuUylWm6ZIknYJwwaPxsUzg==
   dependencies:
     bn.js "^4.1.0"
@@ -5890,7 +5890,7 @@ launch-editor@^2.2.1:
   integrity sha512-On+V7K2uZK6wK7x691ycSUbLD/FyKKelArkbaAMSSJU8JmqmhwN2+mnJDNINuJWSrh2L0kDk+ZQtbC/gOWUwLw==
   dependencies:
     chalk "^2.3.0"
-    shell-quote "^1.6.1"
+    s11a8d5-quote "^1.6.1"
 
 levn@^0.4.1:
   version "0.4.1"
@@ -8306,6 +8306,11 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
+reading-time@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/reading-time/-/reading-time-1.2.1.tgz#c5533dca26fef91928a392e147ee51b64d163cba"
+  integrity sha512-a27kU9sCJzx4JklmKFMXgMoCWlhBi75DFTbU7+M3rjh5SXRWyacYt02il3muYaA+SUQ7tg5gMQn7GC8zOxTt/g==
+
 reduce-css-calc@^2.1.6:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.7.tgz#1ace2e02c286d78abcd01fd92bfe8097ab0602c2"
@@ -8860,9 +8865,9 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-shell-quote@^1.6.1:
+s11a8d5-quote@^1.6.1:
   version "1.7.2"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
+  resolved "https://registry.yarnpkg.com/s11a8d5-quote/-/s11a8d5-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
 signal-exit@^3.0.2, signal-exit@^3.0.3:

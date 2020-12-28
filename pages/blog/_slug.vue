@@ -1,5 +1,19 @@
 <template>
-  <div>
+  <div class="relative">
+    <div class="absolute inset-x-0 top-0 h-64 hero-dots" />
+    <div
+      :class="{
+        [`bg-${colours[0]}-500`]: colours.length == 1,
+        [`from-${colours[0]}-500 to-${colours[1]}-500`]: colours.length == 2,
+        [`from-${colours[0]}-500 via-${colours[1]}-500 to-${colours[2]}-500`]:
+          colours.length == 3,
+      }"
+      class="absolute inset-x-0 top-0 h-56 opacity-20 bg-gradient-to-r"
+    />
+    <div
+      class="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-transparent via-white to-white"
+    />
+
     <div
       class="relative px-4 pt-16 pb-12 overflow-hidden sm:px-6 lg:pt-16 lg:px-8"
     >
@@ -28,10 +42,12 @@
         <div class="flex flex-col w-full">
           <div class="mt-4 mb-4 text-lg">
             <span
-              v-for="category in page.categories || []"
+              v-for="(category, i) in page.categories || []"
               :key="category"
-              class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-primary-100 text-primary-800 mr-2"
+              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium mr-2 border"
+              :class="`bg-${colours[i]}-100 text-${colours[i]}-800 border-${colours[i]}-300`"
             >
+              <n-icon :icon="icons[i]" class="inline-flex w-3 h-3 mr-1" />
               {{ category }}
             </span>
 
@@ -82,6 +98,25 @@
             </div>
           </div>
         </div>
+
+        <div class="pt-6 mt-24 border-t-2 border-gray-100">
+          <h2
+            class="mt-3 text-xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-2xl"
+          >
+            Related posts
+          </h2>
+
+          <div class="flex flex-col sm:flex-row sm:space-x-6">
+            <nuxt-link
+              v-for="blog in relatedBlogs.slice(0, 2)"
+              :key="blog.slug"
+              :to="{ name: 'blog-slug', params: { slug: blog.slug } }"
+              class="block w-full pt-2 mt-4 sm:w-1/2"
+            >
+              <blog-summary :blog="blog" />
+            </nuxt-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -89,8 +124,14 @@
 
 <script>
 import { format } from 'date-fns'
+import BlogSummary from './-BlogSummary.vue'
+import { colours } from './-config'
 
 export default {
+  components: {
+    BlogSummary,
+  },
+
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
     const page = await $content(`blogs/${slug}`)
@@ -99,8 +140,19 @@ export default {
       .catch((err) => {
         error({ statusCode: 404, message: 'Page not found' })
       })
+
+    const blogs = await $content('blogs')
+      .without(['body'])
+      .sortBy('date', 'desc')
+      .fetch()
+      // eslint-disable-next-line handle-callback-err
+      .catch((err) => {
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+
     return {
       page,
+      blogs,
     }
   },
 
@@ -109,6 +161,32 @@ export default {
       //   baseUrl:
       //     process.env.context === 'production' ? process.env.siteUrl : process.env.deployPreviewUrl,
     }
+  },
+
+  computed: {
+    colours() {
+      return this.page.categories.map((cat) => colours[cat].colour)
+    },
+    icons() {
+      return this.page.categories.map((cat) => colours[cat].icon)
+    },
+
+    relatedBlogs() {
+      const related = []
+
+      for (const category of this.page.categories) {
+        for (const blog of this.blogs) {
+          if (blog.slug === this.page.slug) continue
+
+          if (blog.categories.includes(category)) {
+            related.push(blog)
+            continue
+          }
+        }
+      }
+
+      return related
+    },
   },
 
   methods: {

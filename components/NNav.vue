@@ -57,8 +57,10 @@
           </nuxt-link>
           <nuxt-link
             :to="{ name: 'blog' }"
-            link-active-class="font-semibold text-primary-600"
             class="text-base font-medium text-gray-500 hover:text-gray-900"
+            :class="{
+              'font-semibold text-primary-600': $route.name.includes('blog'),
+            }"
           >
             Blog
           </nuxt-link>

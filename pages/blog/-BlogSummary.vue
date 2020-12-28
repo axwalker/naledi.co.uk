@@ -1,8 +1,8 @@
 <template>
   <div
-    class="relative flex flex-col h-full mt-0 overflow-hidden rounded-lg shadow-lg"
+    class="relative flex flex-col overflow-hidden transition transform rounded-lg shadow hover:shadow-lg hover:-translate-x-1 hover:-translate-y-1"
   >
-    <div class="absolute inset-x-0 top-0 h-64 pie-factory opacity-" />
+    <div class="absolute inset-x-0 top-0 h-64 hero-dots" />
     <div
       :class="{
         [`bg-${colours[0]}-500`]: colours.length == 1,
@@ -32,18 +32,28 @@
           <h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
             {{ blog.title }}
           </h3>
-          <p class="mt-3 text-base leading-6 text-gray-500">
+          <p class="mt-5 text-sm leading-6 text-gray-500">
             {{ blog.summary }}
           </p>
         </a>
       </div>
       <div class="flex items-center mt-6">
-        <div class="flex-shrink-0"></div>
-        <div class="ml-1">
-          <div class="flex text-sm leading-5 text-gray-500">
-            <time :datetime="blog.date">
-              {{ dateFormat(new Date(blog.date), 'do MMM, yyyy') }}
-            </time>
+        <!-- <div class="flex-shrink-0"></div> -->
+        <div class="w-full mx-1">
+          <div
+            class="flex items-center justify-between text-sm leading-5 text-gray-400"
+          >
+            <div class="flex items-center">
+              <n-icon icon="calendar" class="inline-flex w-4 h-4 mr-1.5" />
+              <time :datetime="blog.date">
+                {{ dateFormat(new Date(blog.date), 'do MMM, yyyy') }}
+              </time>
+            </div>
+
+            <div class="flex items-center">
+              <n-icon icon="clock" class="inline-flex w-4 h-4 ml-4 mr-1.5" />
+              {{ Math.round(blog.readingTime / 60000) + 1 }} minutes
+            </div>
           </div>
         </div>
       </div>
@@ -77,10 +87,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.pie-factory {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232980c5' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
-</style>
