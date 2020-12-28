@@ -1,5 +1,7 @@
 ---
 title: "Change your mark colour when using an action filter in Tableau"
+summary: |
+  Set up your Tableau visualisation, so that the colour of your visualisation matches the category you are filtering to. 
 date: "2018-12-14"
 categories: 
   - "tableau"

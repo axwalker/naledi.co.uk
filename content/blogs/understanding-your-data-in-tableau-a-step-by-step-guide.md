@@ -1,5 +1,7 @@
 ---
 title: "Understanding your data in Tableau - A step by step guide"
+summary: |
+  Tips for how to familiarise yourself with your data to generate meaningful insights in Tableau.
 date: "2019-06-28"
 categories: 
   - "tableau"

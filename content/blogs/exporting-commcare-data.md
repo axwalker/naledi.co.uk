@@ -1,5 +1,7 @@
 ---
 title: 'Exporting CommCare data'
+summary: |
+  Learn about the three methods to export CommCare data and which one is right for you.
 date: '2019-10-21'
 categories:
   - 'survey'

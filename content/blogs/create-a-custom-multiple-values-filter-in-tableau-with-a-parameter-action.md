@@ -1,7 +1,7 @@
 ---
 title: 'Create a custom multiple values filter in Tableau with a Parameter Action'
 summary: |
-  Tableau provides a bunch of different filtering options to enable the functionality we need to interact with our data. However, while practical, there are very few options to customise the look of these filters.
+  Create a custom filter in Tableau to match your dashboard design, that lets you select and deselect multiple items.
 date: '2020-11-22'
 categories:
   - 'tableau'

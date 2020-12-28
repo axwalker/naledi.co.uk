@@ -1,5 +1,7 @@
 ---
 title: "Four things I learned building my first iterative macro in Alteryx"
+summary: |
+  Learn the difference between iterative and batch macros and get tips for creating iterative macros in Alteryx.
 date: "2019-03-25"
 categories: 
   - "alteryx"

@@ -1,5 +1,7 @@
 ---
 title: 'Connecting to Exasol with Alteryx'
+summary: | 
+  Instructions for setting up your Exasol connection in Alteryx for the first time. 
 date: '2017-07-21'
 categories:
   - 'alteryx'

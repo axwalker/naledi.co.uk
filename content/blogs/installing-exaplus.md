@@ -1,8 +1,10 @@
 ---
 title: 'Exasol for Tableau and Alteryx users -Installing Exaplus'
+summary: |
+  A quick introduction to installing exaplus, to interact with your Exasol database. 
 date: '2017-03-23'
 categories:
-  - 'alteryx'
+  
   - 'data'
 ---
 

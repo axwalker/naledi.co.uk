@@ -1,5 +1,7 @@
 ---
 title: "Calculation testing in Tableau - A beginners guide"
+summary: |
+  Two techniques to use to really understand what your calculations are doing in Tableau. 
 date: "2020-02-25"
 categories: 
   - "tableau"

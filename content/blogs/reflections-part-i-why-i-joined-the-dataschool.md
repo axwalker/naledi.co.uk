@@ -1,5 +1,7 @@
 ---
 title: "Reflections Part I – Why I joined the Data School"
+summary: |
+  A reflection on my career before The Data School and the first four months of my training at The Information Lab 
 date: "2018-03-13"
 categories: 
   - "journey"

@@ -1,5 +1,7 @@
 ---
 title: '#VizForSocialGood - Tomorrow Today Data'
+summary: |
+  Understand the data preparation process and download the Alteryx workflow and data to the 2017 #VizForSocialGood project for 'Tomorrow Today'.
 date: '2018-02-01'
 categories:
   - 'alteryx'

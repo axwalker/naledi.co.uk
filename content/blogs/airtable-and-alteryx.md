@@ -1,7 +1,7 @@
 ---
 title: 'Airtable and Alteryx'
 summary: |
-  How to pull Airtable data into Alteryx
+  How to use the Airtable API to pull data into Alteryx for further processing.
 date: '2019-02-07'
 categories:
   - 'alteryx'

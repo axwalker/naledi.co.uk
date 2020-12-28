@@ -1,5 +1,7 @@
 ---
 title: 'Training the team at Operation Fistula'
+summary: |
+  How do you start training a team in Tableau when people have diverse backgrounds, sometimes limited data experience and little time in their workday to practise? 
 date: '2018-08-20'
 categories:
   - 'journey'

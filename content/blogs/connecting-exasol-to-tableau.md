@@ -1,5 +1,7 @@
 ---
 title: 'Getting started with Exasol for Tableau and Alteryx users - Connecting to Tableau'
+summary: |
+  Step by step instructions to connect to your Exasol database for the first time. 
 date: '2017-04-10'
 categories:
   - 'data'

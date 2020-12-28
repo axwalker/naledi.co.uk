@@ -1,5 +1,7 @@
 ---
 title: "Why is your map not working? – An introduction to mapping in Tableau"
+summary: |
+  Understand how Tableau maps work and find solutions to common problems. 
 date: "2017-09-22"
 categories: 
   - "tableau"

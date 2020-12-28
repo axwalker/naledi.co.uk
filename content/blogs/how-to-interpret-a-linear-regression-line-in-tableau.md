@@ -1,5 +1,7 @@
 ---
 title: "How to interpret a linear regression line in Tableau"
+summary: |
+  A regression line is easy to create in Tableau, but do you know how to interpret it and gain valuable insights? 
 date: "2017-10-22"
 categories: 
   - "tableau"

@@ -1,5 +1,7 @@
 ---
 title: "Do you need to be a SQL expert as a Tableau developer?"
+summary: |
+  When looking through job ads SQL skills are often highly sought for Tableau developers, but does the role really need them? And do you need to be good at SQL expert if you are a Tableau expert? 
 date: "2020-07-13"
 categories: 
   - "data"

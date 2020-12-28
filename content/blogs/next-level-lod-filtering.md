@@ -1,5 +1,7 @@
 ---
 title: "Next level LOD filtering in Tableau"
+summary: |
+  Set up a filter in Tableau that lets you select a whole category by selecting a member of the subcategory. 
 date: "2017-09-05"
 categories: 
   - "tableau"

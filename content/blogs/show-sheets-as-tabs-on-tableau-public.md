@@ -1,5 +1,7 @@
 ---
 title: "Show sheets as tabs on Tableau Public"
+summary: |
+  A quick Tableau tip on how to show your whole workbook on Tableau Public rather than just one sheet. 
 date: "2017-12-18"
 categories: 
   - "tableau"

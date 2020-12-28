@@ -1,5 +1,7 @@
 ---
 title: "Import multiple files to Alteryx with the Directory tool"
+summary: |
+  The directory tool in Alteryx extracts all information about a folder. Find out how you can use it to import multiple files at once. 
 date: "2017-04-22"
 categories: 
   - "alteryx"

@@ -1,5 +1,7 @@
 ---
 title: 'Reflections Part II - What I learned at The Data School'
+summary: |
+  Reflections on my four placements during my time at The Data School and what I learned. 
 date: '2018-03-16'
 categories:
   - 'journey'

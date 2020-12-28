@@ -1,5 +1,7 @@
 ---
 title: "Dual axis mapping in Tableau with custom and generated coordinates"
+summary: |
+  How to set up your Tableau map with custom and generated coordinates (versions 2018.1 - 2020.3).
 date: "2018-07-02"
 categories: 
   - "tableau"

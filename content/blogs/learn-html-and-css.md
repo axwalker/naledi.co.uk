@@ -1,5 +1,7 @@
 ---
 title: "Learn HTML and CSS"
+summary: |
+  My experience and tips for how to learn the basics of HTML and CSS for free with online resources. 
 date: "2020-03-16"
 categories: 
   - "journey"

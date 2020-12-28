@@ -1,5 +1,7 @@
 ---
 title: 'Tableau Conference Recap - #data17'
+summary: |
+  A reflection on my first Tableau Conference in London in 2017.
 date: '2017-06-13'
 categories:
   - 'data'

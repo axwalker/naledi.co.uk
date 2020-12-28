@@ -1,5 +1,7 @@
 ---
 title: 'Parsing an Exasol Date in Tableau'
+summary: |
+  How to set up a calculation in Tableau to translate a string into a recognised date for Exasol. 
 date: '2017-05-15'
 categories:
   - 'data'
