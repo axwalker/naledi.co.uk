@@ -101,7 +101,7 @@
         <div class="overflow-hidden bg-white rounded-lg shadow-xs">
           <div class="flex items-center justify-between px-5 pt-4">
             <div>
-              <span class="text-5xl font-black text-primary-600"> n </span>
+              <span class="text-5xl font-black text-primary-500"> n </span>
             </div>
             <div class="-mr-2">
               <button
@@ -172,11 +172,11 @@ export default {
       isMobileMenuOpen: false,
     }
   },
+
+  watch: {
+    $route() {
+      this.isMobileMenuOpen = false
+    },
+  },
 }
 </script>
-
-<style>
-/* a.nuxt-link-active {
-  @apply text-primary-500 font-bold;
-} */
-</style>
