@@ -214,4 +214,58 @@ export default {
 .prose .caption {
   @apply pb-8 text-sm text-center;
 }
+ol[start='2'] {
+  counter-reset: lis 1;
+}
+ol[start='3'] {
+  counter-reset: lis 2;
+}
+ol[start='4'] {
+  counter-reset: lis 3;
+}
+ol[start='5'] {
+  counter-reset: lis 4;
+}
+ol[start='6'] {
+  counter-reset: lis 5;
+}
+ol[start='7'] {
+  counter-reset: lis 6;
+}
+ol[start='8'] {
+  counter-reset: lis 7;
+}
+ol[start='9'] {
+  counter-reset: lis 8;
+}
+ol[start='10'] {
+  counter-reset: lis 9;
+}
+ol[start='11'] {
+  counter-reset: lis 10;
+}
+ol[start='12'] {
+  counter-reset: lis 11;
+}
+ol[start='13'] {
+  counter-reset: lis 12;
+}
+ol[start='14'] {
+  counter-reset: lis 13;
+}
+ol[start='15'] {
+  counter-reset: lis 14;
+}
+ol[start='16'] {
+  counter-reset: lis 15;
+}
+ol[start='17'] {
+  counter-reset: lis 16;
+}
+ol[start='18'] {
+  counter-reset: lis 17;
+}
+ol[start='19'] {
+  counter-reset: lis 18;
+}
 </style>

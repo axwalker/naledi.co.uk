@@ -12,9 +12,10 @@ tags:
 
 Tableau provides a bunch of different filtering options to enable the functionality we need to interact with our data. However, while practical, there are very few options to customise the look of these filters. After spending a long time polishing that perfect dashboard, you want your filters to blend in seamlessly.
 
-![A screenshot of a Tableau dashboard, showing the different options for configuring regular filters](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-42-24.png?w=254)
-
-<p class="caption">The different filter presentation options available on a Tableau dashboard</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-42-24.png?w=254"
+alt="A screenshot of a Tableau dashboard, showing the different options for configuring regular filters"
+caption="The different filter presentation options available on a Tableau dashboard"></n-img>
 
 Instead of heading to the limited formatting options for your filter controls you can create your own filter interactions by using sheets, which give you all the customisation options normally available when building visualisations.
 
