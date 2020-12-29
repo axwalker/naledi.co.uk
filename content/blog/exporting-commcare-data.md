@@ -37,11 +37,15 @@ When I first started working with Operation Fistula [manual downloads](https://c
 
 **How:** Manual exports from CommCare are easy, although a little tedious if you have many different apps. Just navigate to the Data menu option and select either form downloads or case downloads, then add a new export. You can customise the field names and which fields should be included and save this export so it can be repeated at a later date.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg"
+img-class="w-12"></n-img>
 
 **Pros**: It's free and simple. If you have a small number of apps and forms and a specific report you need to produce every quarter then this might be enough for you.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96"
+img-class="w-12"></n-img>
 
 **Cons**: When you have a lot of forms and apps this list becomes pretty messy because any one-time request for data results in a new saved export. Especially when working with several colleagues on the platform, this quickly leads to duplicates unless there is a clear system for how exports are saved.
 
@@ -55,13 +59,17 @@ Our system lived on AWS and consisted of a file storing system, a Postgres datab
 
 We used this for a while but in the end it wasn't the best solution for us.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg"
+img-class="w-12"></n-img>
 
 **Pros**: If you have a limited number of apps with few changes and little cleansing needed then this is a viable option to achieve automation. You will need to have someone skilled enough to set this up for you but this could probably be achieved in a few days by someone with the right skills. In our case we were able to source this resource for free through a volunteer.
 
 If you are adept with SQL you could perform your cleaning processes directly in the database or with another tool that allows you to automate this process.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96"
+img-class="w-12"></n-img>
 
 **Cons**: The initial setup will need to be performed by someone with a good deal of developer or IT knowledge. It involves some Python. Because it runs on AWS there is some cost associated. Depending on the size of your app(s) you might get away with a micro instance and in the first year of use you will have your free tier which will make this pretty low cost. We had to upgrade to a small instance as we frequently experienced crashes. In the end we paid about £25/month.
 
@@ -77,11 +85,15 @@ The website is a little confusing on this point because there is an API that is 
 
 I have built a set of macros and workflows in Alteryx that allow me to easily access the data from CommCare, clean it and then output it to our Exasol database. While we unfortunately still don't have a way to automate our Alteryx workflows, this gets us to a point where we can refresh our data with the click of a button.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-58.jpg"
+img-class="w-12"></n-img>
 
 **Pros**: This is the most flexible model yet. It allows us a lot of freedom in the way that our system is set up and the exact structure of our database. While we use Alteryx, APIs can be easily used with a multitude of software and coding languages. You could translate all of our Alteryx workflows into an open-source language or alternative tool of your choice.
 
-![](https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/06/2019-06-21_12-04-19.jpg?w=96"
+img-class="w-12"></n-img>
 
 **Cons**: With lots of flexibility also comes lots of work, so the initial process of setting up your processes might be time-consuming. This is worth it for our setup where we might create a new app, want to monitor the pilot phase, make changes to the app, and then analyse the actual data coming in. The data export for a new app is set up very quickly with our approach and changes can be implemented easily. But if your platform is less complex the amount of effort that goes into figuring out the basics is possibly not worth it.
 

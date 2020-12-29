@@ -37,7 +37,10 @@ Airtable does however have very extensive and clear API documentation, and I use
 
 #### Using the macro
 
-![The logo of the Alteryx macro, which shows the Airtable logo on the grey background shape that is typically used for download tools in Alteryx](https://nalediholly.files.wordpress.com/2019/02/airtable-download-1.png)
+<n-img
+src="https://nalediholly.files.wordpress.com/2019/02/airtable-download-1.png"
+alt="The logo of the Alteryx macro, which shows the Airtable logo on the grey background shape that is typically used for download tools in Alteryx"
+img-class="w-24"></n-img>
 
 I created a macro, which [you can find in the Alteryx gallery.](https://gallery.alteryx.com/#!app/Airtable-download/5c5aeccf826fd30988f0959e) The interface allows you to enter the API for the table you would like to access and your unique API key. You can find both of these in your [Airtable API documentation](https://airtable.com/api).
 

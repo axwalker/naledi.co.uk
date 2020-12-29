@@ -1,9 +1,9 @@
 <template>
-  <p>
-    <img :src="src" />
+  <div class="flex flex-col items-center justify-center my-12">
+    <img :src="src" :class="imgClass" :alt="alt || caption" />
 
     <span v-if="caption" class="block text-sm text-center">{{ caption }}</span>
-  </p>
+  </div>
 </template>
 
 <script>
@@ -14,9 +14,19 @@ export default {
       required: true,
     },
 
+    alt: {
+      type: String,
+      default: '',
+    },
+
     caption: {
       type: String,
-      required: true,
+      default: '',
+    },
+
+    imgClass: {
+      type: String,
+      default: '',
     },
   },
 }

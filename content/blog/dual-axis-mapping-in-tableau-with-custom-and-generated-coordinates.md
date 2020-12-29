@@ -1,10 +1,10 @@
 ---
-title: "Dual axis mapping in Tableau with custom and generated coordinates"
+title: 'Dual axis mapping in Tableau with custom and generated coordinates'
 summary: |
   How to set up your Tableau map with custom and generated coordinates (versions 2018.1 - 2020.3).
-date: "2018-07-02"
-categories: 
-  - "tableau"
+date: '2018-07-02'
+categories:
+  - 'tableau'
 ---
 
 One of the improvements that came with Tableau 2018.1 is the ability to create a dual axis map with both generated and custom latitudes and longitudes in Tableau. Setting this up works slightly differently to how you might expect.
@@ -13,9 +13,9 @@ One of the improvements that came with Tableau 2018.1 is the ability to create a
 
 Even before Tableau 2018.1 you could create multiple map layers by duplicating either the latitude or longitude on the rows/columns and select these to be a dual axis, then control individually what level of detail should be shown on each of the marks cards. For instance you could show the complete country outline on one level, and then on the second marks card include a lower level, to show just the active regions.
 
-![2018-06-29_18-39-12](https://nalediholly.files.wordpress.com/2018/06/2018-06-29_18-39-12.png)
-
-One marks card has only country on detail, the other also region, highlighting all the regions in the dataset.
+<n-img
+src="https://nalediholly.files.wordpress.com/2018/06/2018-06-29_18-39-12.png"
+caption="One marks card has only country on detail, the other also region, highlighting all the regions in the dataset"></n-img>
 
 You could do the same thing with latitudes and longitudes that were generated outside of Tableau (i.e. store locations, cities not recognised by Tableau - for more information see my post on [mapping in Tableau](https://nalediholly.wordpress.com/2017/09/22/why-is-your-map-not-working-an-introduction-to-mapping-in-tableau/)). However, when it came to combining generated with custom coordinates, Tableau would go on strike.
 
@@ -35,14 +35,14 @@ Looking at the screenshot in the feature preview, we can see however, that the s
 
 In my case I wanted to have the shapes of the regions shown (generated coordinates), with dots for each of the cities (custom coordinates). This was only possible by having the custom latitude/longitude on the rows/columns and the generated ones on the marks card. It did not draw the shapes the other way around, and would only show points.
 
-![2018-06-29_16-37-33](https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-37-33.png)
+<n-img
+src="https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-37-33.png"
+caption="Place two fields of the same latitude/longitude"></n-img>
 
-Place two fields of the same latitude/longitude
+<n-img
+src="https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-38-101.png"
+caption="Place the other fields on one of the marks cards"></n-img>
 
-![2018-06-29_16-38-10](https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-38-101.png)
-
-Place the other fields on one of the marks cards
-
-![2018-06-29_16-38-24](https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-38-24.png)
-
-Dual axis
+<n-img
+src="https://nalediholly.files.wordpress.com/2018/06/2018-06-29_16-38-24.png"
+caption="Dual axis"></n-img>

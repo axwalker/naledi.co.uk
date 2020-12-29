@@ -1,7 +1,7 @@
 ---
 title: 'Training the team at Operation Fistula'
 summary: |
-  How do you start training a team in Tableau when people have diverse backgrounds, sometimes limited data experience and little time in their workday to practise? 
+  How do you start training a team in Tableau when people have diverse backgrounds, sometimes limited data experience and little time in their workday to practise?
 date: '2018-08-20'
 categories:
   - 'journey'
@@ -28,7 +28,9 @@ Firstly, we are incredibly grateful for the support from the [Tableau Foundation
 
 Secondly, there is enthusiasm, which is driven from the top. Our CEO and Founder Seth Cochran fully supports Tableau, and our goal to get the organisation trained up. This is hugely important, as training will take time away from other tasks, and leadership needs to believe in the value of this training, and allow this operational allocation of time and resources. In addition to this senior-level support, I can also feel that the rest of the team is on board, and excited to learn a new skill.
 
-\[caption id="attachment_589" align="alignnone" width="1992"\]![tableau training Bry and Chloe](https://nalediholly.files.wordpress.com/2018/08/tableau-training-bry-and-chloe-e1534524024770.jpg) Chloe and Bryony at their Tableau Fundamentals Training\[/caption\]
+<n-img
+src="https://nalediholly.files.wordpress.com/2018/08/tableau-training-bry-and-chloe-e1534524024770.jpg"
+caption="Chloe and Bryony at their Tableau Fundamentals Training"></n-img>
 
 ### **The plan**
 

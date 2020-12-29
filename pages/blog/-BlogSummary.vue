@@ -28,14 +28,14 @@
           {{ category }}
         </span>
 
-        <a href="#" class="block">
+        <div class="block">
           <h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
             {{ blog.title }}
           </h3>
           <p class="mt-5 text-sm leading-6 text-gray-500">
             {{ blog.summary }}
           </p>
-        </a>
+        </div>
       </div>
       <div class="flex items-center mt-6">
         <!-- <div class="flex-shrink-0"></div> -->
