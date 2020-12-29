@@ -1,54 +1,69 @@
 <template>
   <div>
+    <!-- <span class="sm:hidden">xs</span>
+    <span class="hidden sm:block md:hidden">sm</span>
+    <span class="hidden md:block lg:hidden">md</span>
+    <span class="hidden lg:block">lg</span> -->
+
     <!-- Leader -->
     <div class="relative">
       <main
-        class="relative flex flex-col items-center justify-center px-4 pt-16 pb-10 mx-auto max-w-7xl sm:pt-12"
+        class="relative flex items-center justify-between px-4 pt-16 pb-10 mx-auto space-x-10 max-w-7xl sm:pt-12"
       >
-        <div class="text-center">
+        <div class="text-left md:ml-6 md:w-7/12 lg:w-1/2">
           <h1
-            class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+            class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
           >
             <span class="block">Naledi Hollbruegge</span>
-            <span class="block text-primary-600"> Analytics Consultant </span>
+            <span class="block text-primary-500"> Analytics Consultant </span>
           </h1>
-          <p
-            class="max-w-md mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
-          >
+          <p class="max-w-md mt-3 text-base text-gray-500 md:mt-5 md:max-w-3xl">
             Collect, process, analyse and present data - from supporting every
             day business decisions to fuelling global change.
           </p>
-          <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
-            <div class="shadow rounded-3xl">
+          <div
+            class="max-w-md mt-5 sm:flex sm:justify-start md:mt-8 md:text-sm lg:text-base"
+          >
+            <div
+              class="transform shadow rounded-3xl hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
               <nuxt-link
                 to="#portfolio"
-                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-3xl bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
+                class="flex items-center justify-start w-full px-8 py-3 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 md:py-4 md:text-lg md:px-10"
               >
                 See my portfolio
               </nuxt-link>
             </div>
-            <div class="mt-3 shadow rounded-3xl sm:mt-0 sm:ml-3">
+            <div
+              class="mt-3 transform shadow rounded-3xl sm:mt-0 sm:ml-3 transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-lg"
+            >
               <nuxt-link
                 to="#contact"
-                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-primary-100 rounded-3xl text-primary-600 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                class="flex items-center justify-start w-full px-8 py-3 font-medium bg-white border border-primary-100 rounded-3xl text-primary-600 md:py-4 md:text-lg md:px-10"
               >
                 Get in touch
               </nuxt-link>
             </div>
           </div>
         </div>
+
+        <div class="flex-grow hidden md:block">
+          <img src="/hero.svg" class="mx-auto md:h-64 lg:h-96" />
+        </div>
       </main>
 
       <!-- Services -->
-      <div id="services" class="relative pt-16 pb-24">
-        <div class="max-w-xl px-4 mx-auto sm:px-6 lg:max-w-screen-xl lg:px-8">
-          <div class="text-center lg:grid lg:grid-cols-3 lg:gap-20">
+      <div id="services" class="relative pt-12 pb-24">
+        <div class="w-full px-4 mx-auto sm:px-6 md:max-w-screen-xl lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-10 text-left md:grid-cols-3 md:gap-20"
+          >
             <div v-for="service in services" :key="service.name">
               <div>
-                <img :src="service.image" class="w-32 h-32 mx-auto" />
+                <img :src="service.image" class="w-32 h-32 -ml-4" />
                 <div class="mt-5">
                   <h5
-                    class="text-xl font-medium leading-6 text-center text-gray-900"
+                    class="text-xl font-medium leading-6 text-left text-gray-900"
                   >
                     {{ service.name }}
                   </h5>
@@ -86,7 +101,7 @@
           >
             About me
           </h2>
-          <p class="mt-3 leading-7 text-gray-300 text-md">
+          <p class="mt-3 leading-7 text-primary-50 text-md">
             I am Naledi, a consulting data analyst and social researcher
             passionate about working with organisations that want to make
             effective use of their data; from the first ideas around what you
@@ -97,7 +112,7 @@
             share insights with new audiences. I also offer training in Tableau,
             Alteryx, CommCare, Research Methods and Data Literacy.
           </p>
-          <p class="mt-3 leading-7 text-gray-300 text-md">
+          <p class="mt-3 leading-7 text-primary-50 text-md">
             I am available for short-term freelancing projects or on longer-term
             consulting contracts.
           </p>

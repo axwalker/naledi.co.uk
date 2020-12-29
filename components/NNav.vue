@@ -2,12 +2,12 @@
   <div class="relative z-30 bg-white">
     <div class="px-4 mx-auto max-w-7xl sm:px-6">
       <div
-        class="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10"
+        class="flex items-center justify-between py-6 border-gray-100 md:justify-start md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <nuxt-link to="/">
             <span class="sr-only">Naledi</span>
-            <span class="text-5xl font-black text-primary-600"> n </span>
+            <span class="text-5xl font-black text-primary-500"> n </span>
           </nuxt-link>
         </div>
 
