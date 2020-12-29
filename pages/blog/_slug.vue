@@ -134,14 +134,14 @@ export default {
 
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(`blogs/${slug}`)
+    const page = await $content(`blog/${slug}`)
       .fetch()
       // eslint-disable-next-line handle-callback-err
       .catch((err) => {
         error({ statusCode: 404, message: 'Page not found' })
       })
 
-    const blogs = await $content('blogs')
+    const blogs = await $content('blog')
       .without(['body'])
       .sortBy('date', 'desc')
       .fetch()

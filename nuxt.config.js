@@ -86,4 +86,12 @@ export default {
       }
     },
   },
+
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('blog').only(['slug', 'path']).fetch()
+      return files.map((file) => ({ route: file.path }))
+    },
+  },
 }

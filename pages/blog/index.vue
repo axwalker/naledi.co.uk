@@ -111,7 +111,7 @@ export default {
   },
 
   async asyncData({ $content, params, error }) {
-    const blogs = await $content('blogs')
+    const blogs = await $content('blog')
       .without(['body'])
       .sortBy('date', 'desc')
       .fetch()
