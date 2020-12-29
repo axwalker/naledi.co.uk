@@ -94,4 +94,10 @@ export default {
       return files.map((file) => ({ route: file.path }))
     },
   },
+
+  env: {
+    siteUrl: process.env.URL || 'http://localhost:3000',
+    deployPreviewUrl: process.env.DEPLOY_PRIME_URL || 'http://localhost:3000',
+    context: process.env.CONTEXT || 'LOCAL',
+  },
 }
