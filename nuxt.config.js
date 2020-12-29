@@ -61,31 +61,31 @@ export default {
     id: 'UA-161391703-1',
   },
 
-  router: {
-    scrollBehavior(to) {
-      if (to.hash) {
-        if (document.querySelector(to.hash)) {
-          return window.scrollTo({
-            top: document.querySelector(to.hash).offsetTop,
-            behavior: 'smooth',
-          })
-        } else {
-          return new Promise((resolve) => {
-            setTimeout(() => {
-              resolve(
-                window.scrollTo({
-                  top: document.querySelector(to.hash).offsetTop,
-                  behavior: 'smooth',
-                })
-              )
-            }, 500)
-          })
-        }
-      } else {
-        return { x: 0, y: 0 }
-      }
-    },
-  },
+  //   router: {
+  //     scrollBehavior(to) {
+  //       if (to.hash) {
+  //         if (document.querySelector(to.hash)) {
+  //           return window.scrollTo({
+  //             top: document.querySelector(to.hash).offsetTop,
+  //             behavior: 'smooth',
+  //           })
+  //         } else {
+  //           return new Promise((resolve) => {
+  //             setTimeout(() => {
+  //               resolve(
+  //                 window.scrollTo({
+  //                   top: document.querySelector(to.hash).offsetTop,
+  //                   behavior: 'smooth',
+  //                 })
+  //               )
+  //             }, 500)
+  //           })
+  //         }
+  //       } else {
+  //         return { x: 0, y: 0 }
+  //       }
+  //     },
+  //   },
 
   generate: {
     async routes() {
