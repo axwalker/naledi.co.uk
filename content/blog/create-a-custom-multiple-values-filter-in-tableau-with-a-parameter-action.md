@@ -31,15 +31,15 @@ Set actions allow us to extend these examples, by allowing us to add items to a 
 4. It is clear which items are selected and which are not
 5. The clicked item does not highlight, only the symbol changes
 
-![](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-47-08.png?w=1011)
-
-<p class="caption">The final dashboard</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-47-08.png?w=1011"
+caption="The final dashboard"></n-img>
 
 ## How to do it
 
-![](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_14-18-48.png?w=1024)
-
-<p class="caption">How the filter sheet is set up</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_14-18-48.png?w=1024"
+caption="How the filter sheet is set up"></n-img>
 
 1. Create a sheet that will be your filter sheet
 2. Drag the field you want to filter with to the sheet. I am using the Tableau "World Indicators" data for this example and am setting up a filter for region so I placed this to the rows shelf.
@@ -47,9 +47,9 @@ Set actions allow us to extend these examples, by allowing us to add items to a 
 4. I don't have a need for tooltips in my filter, so I turned those off.
 5. Now create a parameter. Set the data type to string and allow all values
 
-![](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_12-46-08.png?w=558)
-
-<p class="caption">How to set up the parameter</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_12-46-08.png?w=558"
+caption="How to set up the parameter"></n-img>
 
 6. Create a calculation that will use this parameter.
    1. The calculation evaluates if the field that is being selected is part of the current parameter value or not. The parameter is a concatenated list of all the values that are selected.
@@ -76,16 +76,16 @@ END
 12. The next step is to create a dashboard and place both sheets on this.
 13. Now create a dashboard action where you select the filter sheet as the source. On select, the parameter that I have created is changed, based on the first calculation that I created. We don't want anything to happen when we clear the selection, so it is set to just keep the same value.
 
-![](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_12-58-24.png?w=502)
-
-<p class="caption">How to set up the parameter action</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_12-58-24.png?w=502"
+caption="How to set up the parameter action"></n-img>
 
 14. With this our filter already works, but whenever we click a region to add or remove it from the line chart the selection gets highlighted. There are a few ways to stop this from happening but I followed the approach explained in [this video](https://www.vizwiz.com/2020/11/reorder-stacked-bars.html).
 15. I created a "No highlight" field, which just contains a string with those words, placed it on the details shelf on my filter sheet and then set up a filter action to filter from that field to one I don't use in my view.
 
-![](https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-04-42.png?w=522)
-
-<p class="caption">A filter action to stop selections from highlighting</p>
+<n-img
+src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-04-42.png?w=522"
+caption="A filter action to stop selections from highlighting"></n-img>
 
 With all these steps completed I now have a filter set up that allows me to add and remove regions from my line chart, with just three calculations, one parameter and two dashboard actions. The benefit of this approach is that it works with fields that contain many different members, as we don't have to create a calculated field or action for each individual item.
 
