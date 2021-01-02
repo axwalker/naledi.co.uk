@@ -6,7 +6,7 @@
       enter-active-class="transition duration-150"
       leave-class="opacity-100"
       leave-to-class="opacity-0"
-      leave-active-class="transition duration-300"
+      leave-active-class="transition duration-150"
     >
       <div
         v-if="isZoomed"
@@ -25,9 +25,13 @@
           :style="caption ? 'margin-bottom: 0' : ''"
         />
 
-        <span v-if="caption" class="block mt-3 text-sm text-center">{{
-          caption
-        }}</span>
+        <span
+          v-if="caption || $slots.default"
+          class="block mt-3 text-sm text-center"
+        >
+          <slot v-if="!caption" />
+          <template v-else>{{ caption }}</template></span
+        >
       </div>
     </transition>
 
@@ -35,14 +39,18 @@
       :src="src"
       :class="imgClass"
       :alt="alt || caption"
-      :style="caption ? 'margin-bottom: 0' : ''"
+      :style="caption || $slots.default ? 'margin-bottom: 0' : ''"
       class="cursor-pointer"
       @click="isZoomed = !isZoomed"
     />
 
-    <span v-if="caption" class="block mt-3 text-sm text-center text-gray-400">{{
-      caption
-    }}</span>
+    <span
+      v-if="caption || $slots.default"
+      class="block mt-3 text-sm text-center text-gray-400"
+    >
+      <slot v-if="!caption" />
+      <template v-else>{{ caption }}</template>
+    </span>
   </div>
 </template>
 
