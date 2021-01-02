@@ -32,4 +32,4 @@ When applying for the Data School, Alteryx was just one of the things that came 
 
  
 
-_These were my expectations, but what was it actually like going through The Data School? I’ve written [a second post](https://nalediholly.wordpress.com/2018/03/16/reflections-part-ii-what-i-learned-at-the-data-school/) to share my experiences of the four months training and my four industry placements._
+_These were my expectations, but what was it actually like going through The Data School? I’ve written <a href="/blog/reflections-part-ii-what-i-learned-at-the-data-school/" target="_blank">a second post</a> to share my experiences of the four months training and my four industry placements._

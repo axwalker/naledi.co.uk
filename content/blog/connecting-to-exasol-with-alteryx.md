@@ -11,7 +11,7 @@ tags:
   - 'in-db'
 ---
 
-Starting with Alteryx version 11.3 the In-DB tools now support a number of new connections, including Exasol. This greatly improves the speed when using Exasol and Alteryx in combination. Rather than bringing all the data from the database into Alteryx, the In-DB tools create a SQL query that is sent to and executed directly in Exasol. As long as you are using the In-DB tools all processes you are performing will be computed directly in Exasol. I can bring in over 800m rows in under a second and use the In-DB tools to manipulate these data at the speeds I am used to from Exasol.
+Starting with Alteryx version 11.3 the In-DB tools support a number of new connections, including Exasol. This greatly improves the speed when using Exasol and Alteryx together. Rather than bringing all the data from the database into Alteryx, the In-DB tools create a SQL query that is sent to and executed directly in Exasol. As long as you are using the In-DB tools all processes you are performing will be computed directly in Exasol. I can bring in over 800m rows in under a second and use the In-DB tools to manipulate these data at the speeds I am used to from Exasol.
 
 **Setting up a new connection:**
 

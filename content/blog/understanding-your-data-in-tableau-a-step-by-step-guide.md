@@ -9,7 +9,7 @@ categories:
 
 Tableau is a great tool to create charts at impressive speeds. But with this trend of fast analytics, and a focus on impressive visuals, the data checking process and thus accuracy aspect is sometimes be neglected. Fundamentally, you need to understand your data in order to make an effective dashboard
 
-Right at the start of [training the team at Operation Fistula](https://nalediholly.wordpress.com/2018/08/20/training-the-team-at-operation-fistula/) in Tableau we used a [#MakeoverMonday](http://www.makeovermonday.co.uk) dataset on Nike factories. Of course the team focused on the variable looking at the proportion of women working in factories. When they presented their visualisations at the end of our one hour I quickly realised two things:
+Right at the start of <a href="/blog/training-the-team-at-operation-fistula/" target="_blank">training the team at Operation Fistula</a> in Tableau we used a [#MakeoverMonday](http://www.makeovermonday.co.uk) dataset on Nike factories. Of course the team focused on the variable looking at the proportion of women working in factories. When they presented their visualisations at the end of our one hour I quickly realised two things:
 
 1. They were presenting the numbers at the country level, although the data was at the factory level
 2. They were presenting the sum of this measure, even though it was a percentage

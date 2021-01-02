@@ -17,7 +17,7 @@ Even before Tableau 2018.1 you could create multiple map layers by duplicating e
 src="https://nalediholly.files.wordpress.com/2018/06/2018-06-29_18-39-12.png"
 caption="One marks card has only country on detail, the other also region, highlighting all the regions in the dataset"></n-img>
 
-You could do the same thing with latitudes and longitudes that were generated outside of Tableau (i.e. store locations, cities not recognised by Tableau - for more information see my post on [mapping in Tableau](https://nalediholly.wordpress.com/2017/09/22/why-is-your-map-not-working-an-introduction-to-mapping-in-tableau/)). However, when it came to combining generated with custom coordinates, Tableau would go on strike.
+You could do the same thing with latitudes and longitudes that were generated outside of Tableau (i.e. store locations, cities not recognised by Tableau - for more information see my post on <a href="/blog/why-is-your-map-not-working-an-introduction-to-mapping-in-tableau/" target="_blank">mapping in Tableau</a>. However, when it came to combining generated with custom coordinates, Tableau would go on strike.
 
 Today at work I needed to visualise some cities and their regions in Madagascar. Tableau recognised Madagascar regions, if the field is assigned the geographical role of 'State/Province' but the city coordinates were brought in separately. A perfect use case for the extended dual axis mapping support.
 
