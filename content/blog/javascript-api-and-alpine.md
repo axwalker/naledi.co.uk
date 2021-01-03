@@ -2,7 +2,7 @@
 title: 'Using Alpine.js with the Tableau JavaScript API'
 summary: |
   How to use the Airtable API to pull data into Alteryx for further processing.
-date: '2021-01-02'
+date: '2021-01-03'
 categories:
   - 'tableau'
 ---
@@ -24,7 +24,7 @@ In many cases this will meet all your needs for sharing your visualisation throu
 
 ## Getting started with the Tableau JavaScript API
 
-In order to start using the Tableau JavaScript API, it is helpful to know some HTML, CSS and JavaScript, but you can also pick it up if you are completely new to web development! If you are new to JavaScript I recommend [this excellent tutorial](https://embedding.theinformationlab.co.uk/videos) to teach you the basics without expecting any JavaScript knowledge. Based on this tutorial I was able to create some simple buttons to replicate the functionality of the toolbar while matching the style guide of the hosting webpage. The HTML and CSS aspects are glossed over a little, so it helped that I was familiar with the basics (Check out my earlier post to see how you can <a href="/blog/learn-html-and-css" target="_blank">learn the basics of HTML and CSS</a>
+In order to start using the Tableau JavaScript API, it is helpful to know some HTML, CSS and JavaScript, but you can also pick it up if you are completely new to web development! If you are new to JavaScript I recommend [this excellent tutorial](https://embedding.theinformationlab.co.uk/videos) to teach you the basics without expecting any JavaScript knowledge. Based on this tutorial I was able to create some simple buttons to replicate the functionality of the toolbar while matching the style guide of the hosting webpage. The HTML and CSS aspects are glossed over a little, so it helped that I was familiar with the basics (Check out my earlier post to see how you can <a href="/blog/learn-html-and-css" target="_blank">learn the basics of HTML and CSS</a>).
 
 <n-img
 src="/blog-images/tableau_buttons_example.png"
@@ -34,7 +34,7 @@ Example of an embedded visualisation. The buttons interact with the dashboard bu
 Visit data.undp.org to see the full page</a>
 </n-img>
 
-_The tutorial uses basic JavaScript throughout and then introduces React in one of its final videos. We believe that Alpine.js is a simpler approach that is more suited to the Tableau JavaScript API_.
+_The tutorial above uses basic JavaScript throughout and then introduces React in one of its final videos. We believe that Alpine.js is a simpler approach that is more suited to the Tableau JavaScript API_.
 
 ## What is Alpine.js?
 
@@ -92,7 +92,7 @@ Now with Alpine.js we can just write our JavaScript within our HTML. We use the 
 
 You can use the Tableau JavaScript API without Alpine, as demonstrated by [various examples in Tableau's documentation](https://help.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_samples.htm). However, writing these can be fiddly and the resulting code can be hard to read and understand. This can get further complicated when you are embedding multiple dashboards in the same web page. Alpine.js solves both of these problems because it is:
 
-- **Declarative:** You define the behaviour you want directly on the elements (eg. a button) that is shown to the user.
+- **Declarative:** You define the behaviour you want directly on the elements (eg. a button) that are shown to the user.
 - **Scoped:** Each Tableau dashboard embed will be its own Alpine component, so the data and buttons associated with each embed can't clash with each other.
 
 ## Using Alpine with Tableau
@@ -112,22 +112,22 @@ We'll use the example of adding custom export buttons taken from [Tableau's docu
   <div x-ref="dashboard"></div>
 
   <div
-    class="flex flex-col items-center mt-6 space-y-2 md:space-y-0 md:flex-row md:space-x-4 md:mx-auto"
+    class="flex flex-col items-stretch mt-6 space-y-2 md:items-center md:space-y-0 md:flex-row md:space-x-4 md:mx-auto"
   >
     <button
-      class="flex md:inline-flex items-center justify-start px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 transform hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
+      class="flex md:inline-flex items-center justify-center px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 transform hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
       x-on:click="viz.showExportPDFDialog()"
     >
       Export to PDF
     </button>
     <button
-      class="inline-flex items-center justify-start px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
+      class="flex md:inline-flex items-center justify-center px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 transform hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
       x-on:click="viz.showExportCrossTabDialog()"
     >
       Export to CSV
     </button>
     <button
-      class="inline-flex items-center justify-start px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
+      class="flex md:inline-flex items-center justify-center px-5 py-1.5 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 transform hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
       x-on:click="viz.exportCrossTabToExcel()"
     >
       Export to Excel
@@ -200,9 +200,9 @@ We'll use the example of adding custom export buttons taken from [Tableau's docu
 
 <div
   x-data="{
-    viz:undefined,
-    url:'https://public.tableau.com/views/USPopulationProjections-MakeoverMonday452018/Ageingpopulation?:language=en-GB&:display_count=y&:origin=viz_share_link',
-    options:{ hideTabs: true }
+    viz: undefined,
+    url: 'https://public.tableau.com/views/USPopulationProjections-MakeoverMonday452018/Ageingpopulation?:language=en-GB&:display_count=y&:origin=viz_share_link',
+    options: { hideTabs: true }
   }"
   x-init="viz = new tableau.Viz($refs.dashboard, url, options)"
 >
