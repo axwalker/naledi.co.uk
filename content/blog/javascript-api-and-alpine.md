@@ -13,7 +13,7 @@ Tableau lets you embed your dashboards in web pages with the [Tableau JavaScript
 
 ## The Tableau JavaScript API
 
-If you have ever embedded a Tableau dashboard in a website you will be familiar with the basic embedding functionality available through the embed code you can access through the share options. You can even change [parameters](https://help.tableau.com/current/pro/desktop/en-us/embed_list.htm) in this code to customise aspects like which options are available through the Toolbar or if tabs should be hidden.
+If you have ever embedded a Tableau dashboard in a website you will be familiar with the basic embedding functionality. This is available through the share options, where you will find the generated embed code. You can even change [parameters](https://help.tableau.com/current/pro/desktop/en-us/embed_list.htm) in this code to customise aspects, such as which options are available through the toolbar or if tabs should be hidden.
 
 <n-img
 src="/blog-images/basic_embed.png"
@@ -24,7 +24,7 @@ In many cases this will meet all your needs for sharing your visualisation throu
 
 ## Getting started with the Tableau JavaScript API
 
-In order to start using the Tableau JavaScript API, it is helpful to know some HTML, CSS and JavaScript, but you can also pick it up if you are completely new to web development! If you are new to JavaScript I recommend [this excellent tutorial](https://embedding.theinformationlab.co.uk/videos) to teach you the basics without expecting any JavaScript knowledge. Based on this tutorial I was able to create some simple buttons to replicate the functionality of the toolbar while matching the style guide of the hosting webpage. The HTML and CSS aspects are glossed over a little, so it helped that I was familiar with the basics (Check out my earlier post to see how you can <a href="/blog/learn-html-and-css" target="_blank">learn the basics of HTML and CSS</a>).
+In order to start using the Tableau JavaScript API, it is helpful to know some HTML, CSS and JavaScript, but you can also pick it up if you don't know these languages! If you are new to the JavaScript API I recommend [this excellent tutorial](https://embedding.theinformationlab.co.uk/videos). It teaches you the basics without expecting any JavaScript knowledge. Based on this tutorial I was able to create some simple buttons to replicate the functionality of the Tableau toolbar while matching the style of the hosting webpage. The HTML and CSS aspects are glossed over a little in the tutorial, so it helped that I was familiar with the fundamentals (Check out my earlier post to see how you can <a href="/blog/learn-html-and-css" target="_blank"> learn HTML and CSS</a>).
 
 <n-img
 src="/blog-images/tableau_buttons_example.png"
@@ -34,11 +34,11 @@ Example of an embedded visualisation. The buttons interact with the dashboard bu
 Visit data.undp.org to see the full page</a>
 </n-img>
 
-_The tutorial above uses basic JavaScript throughout and then introduces React in one of its final videos. We believe that Alpine.js is a simpler approach that is more suited to the Tableau JavaScript API_.
+The Tableau JavaScript API tutorial mentioned above uses basic JavaScript throughout and then introduces React in one of its final videos. Instead of React, this post suggests the use of Alpine.js as an approach that is more suited for use with Tableau JavaScript API.
 
 ## What is Alpine.js?
 
-[Alpine.js](https://github.com/alpinejs/alpine) is a library that helps you to keep your JavaScript and HTML closer together. With basic JavaScript, you have `<script>` sections (or separate JavaScript files) that control the interactive aspects of your page - including reacting to user inputs and dynamically changing what's displayed on your webpage. It can be difficult to keep your HTML and JavaScript correctly aligned without some additional help. This is where Alpine can come in.
+[Alpine.js](https://github.com/alpinejs/alpine) is a library that helps you to keep your JavaScript and HTML closer together. With basic JavaScript, you have `<script>` sections (or separate JavaScript files) that control the interactive aspects of your page - including reacting to user inputs and dynamically changing what's displayed on your webpage. It can be difficult to keep your HTML and JavaScript correctly aligned without some additional help. This is where Alpine comes in.
 
 Let's look at a basic example of a counter to see what this means. We show a number that you increment or decrement by pressing the plus or minus buttons.
 
@@ -74,7 +74,7 @@ Let's look at a basic example of a counter to see what this means. We show a num
 </script>
 ```
 
-We have to add `id` attributes to each HTML element, then reference them in a separate `<script>` tag and add what are called 'event listeners' to make the appropriate changes to the counter value.
+In basic JavaScript, we have to add `id` attributes to each HTML element, then reference them in a separate `<script>` tag and add what are called 'event listeners' to make the appropriate changes to the counter value.
 
 **Code with Alpine.js:**
 
@@ -86,7 +86,7 @@ We have to add `id` attributes to each HTML element, then reference them in a se
 </div>
 ```
 
-Now with Alpine.js we can just write our JavaScript within our HTML. We use the `x-data` to make an Alpine 'component' with some initial data attached to it - we set `counter` to `0`. Then we have two buttons which decrease/increase this counter respectively using the `x-on:click` attribute. Finally, we show the value of this counter in the middle using `x-text`. Each of these `x-` attributes are called 'directives', and they're what we'll be using in combination with Tableau.
+Now with Alpine.js we can write our JavaScript directly within our HTML. We use the `x-data` to make an Alpine 'component' with some initial data attached to it - we set `counter` to `0`. Then we have two buttons which decrease/increase this counter respectively using the `x-on:click` attribute. Finally, we show the value of this counter in the middle using `x-text`. Each of these `x-` attributes are called 'directives', and they're what we'll be using in combination with Tableau.
 
 ## Why use Alpine.js with Tableau?
 
