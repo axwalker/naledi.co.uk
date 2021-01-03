@@ -153,6 +153,36 @@
       d="M6 18L18 6M6 6l12 12"
     />
   </svg>
+
+  <svg
+    v-else-if="icon === 'terminal'"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+    />
+  </svg>
+
+  <svg
+    v-else-if="icon === 'code'"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+    />
+  </svg>
 </template>
 
 <script>

@@ -19,4 +19,8 @@ export const colours = {
     colour: 'purple',
     icon: 'beaker',
   },
+  webdev: {
+    colour: 'pink',
+    icon: 'code',
+  },
 }
