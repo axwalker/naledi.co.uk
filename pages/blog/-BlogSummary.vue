@@ -68,6 +68,7 @@
 // purge-ignore: text-yellow-800 bg-yellow-100 border-yellow-600 to-yellow-500 via-yellow-500 from-yellow-500 bg-yellow-500 border-yellow-300
 // purge-ignore: text-red-800 bg-red-100 border-red-600 to-red-500 via-red-500 from-red-500 bg-red-500 border-red-300
 // purge-ignore: text-purple-800 bg-purple-100 border-purple-600 to-purple-500 via-purple-500 from-purple-500 bg-purple-500 border-purple-300
+// purge-ignore: text-pink-800 bg-pink-100 border-pink-600 to-pink-500 via-pink-500 from-pink-500 bg-pink-500 border-pink-300
 
 import { format } from 'date-fns'
 import { colours } from './-config'
