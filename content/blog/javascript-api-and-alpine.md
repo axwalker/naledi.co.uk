@@ -1,7 +1,7 @@
 ---
 title: 'Using Alpine.js with the Tableau JavaScript API'
 summary: |
-  How to use Alpine.js and the Tableau JavaScript API to embed Tableaud dashboards in your web pages
+  How to use Alpine.js and the Tableau JavaScript API to embed Tableau dashboards in your web pages
 date: '2021-01-03'
 categories:
   - 'tableau'
