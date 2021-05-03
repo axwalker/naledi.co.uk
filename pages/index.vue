@@ -8,9 +8,11 @@
     <!-- Leader -->
     <div class="relative">
       <main
-        class="relative flex items-center justify-between px-4 pt-16 pb-10 mx-auto space-x-10 max-w-7xl sm:pt-12"
+        class="relative flex items-center px-4 pt-16 pb-10 mx-auto space-x-10 md:justify-center max-w-7xl sm:pt-12"
       >
-        <div class="text-left md:ml-6 md:w-7/12 lg:w-1/2">
+        <div
+          class="flex flex-col md:text-center md:items-center md:ml-6 md:w-7/12 lg:w-1/2"
+        >
           <h1
             class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
           >
@@ -22,7 +24,7 @@
             day business decisions to fuelling global change.
           </p>
           <div
-            class="max-w-md mt-5 sm:flex sm:justify-start md:mt-8 md:text-sm lg:text-base"
+            class="max-w-md mt-5 sm:flex md:justify-center md:mt-8 md:text-sm lg:text-base"
           >
             <div
               class="transform shadow rounded-3xl hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
@@ -45,10 +47,6 @@
               </nuxt-link>
             </div>
           </div>
-        </div>
-
-        <div class="flex-grow hidden md:block">
-          <img src="/hero.svg" class="mx-auto md:h-64 lg:h-96" />
         </div>
       </main>
 
