@@ -291,6 +291,10 @@ export default {
 </script>
 
 <style>
+.twitter-tweet {
+  @apply m-auto;
+}
+
 .prose a {
   @apply text-primary-500;
 }

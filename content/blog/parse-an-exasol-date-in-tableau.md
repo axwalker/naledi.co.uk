@@ -26,7 +26,7 @@ The second attempt was to use the DATEPARSE function to manually transform the s
 
 The best way to solve this issue is to change the datatype directly through Exaplus so that the field comes in correctly as a datetime. If you cannot do that, here is how you can do it directly in Tableau with a calculation.
 
-## Setting up the calculationpcon
+## Setting up the calculation
 
 ![2017-05-15_17-19-53](https://nalediholly.files.wordpress.com/2017/05/2017-05-15_17-19-531.png)
 

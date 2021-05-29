@@ -16,10 +16,6 @@ In order to access the additional settings select the option "Edit Details". Thi
 
 ![Edit details](https://nalediholly.files.wordpress.com/2017/12/edit-details1.jpg)
 
- 
-
 After selecting this button you will now see the option to show your sheet as tabs. Once ticked, this will reveal all of the dashboard in your workbook.
-
- 
 
 ![Show sheets as tabs](https://nalediholly.files.wordpress.com/2017/12/show-sheets-as-tabs.jpg)

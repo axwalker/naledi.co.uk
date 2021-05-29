@@ -33,6 +33,7 @@ Set actions allow us to extend these examples, by allowing us to add items to a 
 
 <n-img
 src="https://nalediholly.files.wordpress.com/2020/11/2020-11-21_13-47-08.png?w=1011"
+alt="A screenshot of a Tableau dashboard, showing the final version of the project. There is a filter on the left with some boxes filled and others not. The colours of each option correspond to the lines in the chart on the right."
 caption="The final dashboard"></n-img>
 
 ## How to do it

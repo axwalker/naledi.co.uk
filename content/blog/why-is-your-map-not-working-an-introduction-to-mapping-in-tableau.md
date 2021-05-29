@@ -42,4 +42,4 @@ City names repeat all across the world so when you are mapping cities or postcod
 
 Also remember that you can only map locations if you have their coordinates. So either they need to be included in Tableau's database of locations or you need to bring in your own latitude and longitude fields. In that case, the dimension that splits up your coordinates is not a geographical field but just a string.
 
-_Please feel free to leave a comment if you have any other mapping questions._
+_Please feel free to send a message or tag me on Twitter if you have any other mapping questions._
