@@ -8,36 +8,13 @@
     <!-- Leader -->
     <div class="relative">
       <main
-        class="
-          relative
-          flex
-          items-center
-          px-4
-          pt-16
-          pb-10
-          mx-auto
-          space-x-10
-          md:justify-center
-          max-w-7xl
-          sm:pt-12
-        "
+        class="relative flex items-center px-4 pt-16 pb-10 mx-auto space-x-10 md:justify-center max-w-7xl sm:pt-12"
       >
         <div
-          class="
-            flex flex-col
-            md:text-center md:items-center md:ml-6 md:w-7/12
-            lg:w-1/2
-          "
+          class="flex flex-col md:text-center md:items-center md:ml-6 md:w-7/12 lg:w-1/2"
         >
           <h1
-            class="
-              text-4xl
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              sm:text-4xl
-              lg:text-5xl
-            "
+            class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
           >
             <span class="block">Naledi Hollbruegge</span>
             <span class="block text-primary-500"> Analytics Consultant </span>
@@ -47,72 +24,24 @@
             day business decisions to fuelling global change.
           </p>
           <div
-            class="
-              max-w-md
-              mt-5
-              sm:flex
-              md:justify-center md:mt-8 md:text-sm
-              lg:text-base
-            "
+            class="max-w-md mt-5 sm:flex md:justify-center md:mt-8 md:text-sm lg:text-base"
           >
             <div
-              class="
-                transform
-                shadow
-                rounded-3xl
-                hover:-translate-x-0.5
-                transition
-                hover:-translate-y-0.5 hover:shadow-lg
-              "
+              class="transform shadow rounded-3xl hover:-translate-x-0.5 transition hover:-translate-y-0.5 hover:shadow-lg"
             >
               <nuxt-link
                 to="#portfolio"
-                class="
-                  flex
-                  items-center
-                  justify-start
-                  w-full
-                  px-8
-                  py-3
-                  font-medium
-                  text-white
-                  border border-transparent
-                  rounded-3xl
-                  bg-primary-500
-                  hover:bg-primary-500
-                  md:py-4 md:text-lg md:px-10
-                "
+                class="flex items-center justify-start w-full px-8 py-3 font-medium text-white border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-500 md:py-4 md:text-lg md:px-10"
               >
                 See my portfolio
               </nuxt-link>
             </div>
             <div
-              class="
-                mt-3
-                transform
-                shadow
-                rounded-3xl
-                sm:mt-0 sm:ml-3
-                transition
-                hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-lg
-              "
+              class="mt-3 transform shadow rounded-3xl sm:mt-0 sm:ml-3 transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-lg"
             >
               <nuxt-link
                 to="#contact"
-                class="
-                  flex
-                  items-center
-                  justify-start
-                  w-full
-                  px-8
-                  py-3
-                  font-medium
-                  bg-white
-                  border border-primary-100
-                  rounded-3xl
-                  text-primary-600
-                  md:py-4 md:text-lg md:px-10
-                "
+                class="flex items-center justify-start w-full px-8 py-3 font-medium bg-white border border-primary-100 rounded-3xl text-primary-600 md:py-4 md:text-lg md:px-10"
               >
                 Get in touch
               </nuxt-link>
@@ -132,12 +61,7 @@
                 <img :src="service.image" class="w-32 h-32 -ml-4" />
                 <div class="mt-5">
                   <h5
-                    class="
-                      text-xl
-                      font-medium
-                      leading-6
-                      text-left text-gray-900
-                    "
+                    class="text-xl font-medium leading-6 text-left text-gray-900"
                   >
                     {{ service.name }}
                   </h5>
@@ -155,13 +79,7 @@
     <!-- About me -->
     <div id="about-me" class="relative bg-primary-700">
       <div
-        class="
-          relative
-          h-56
-          bg-primary-600
-          sm:h-72
-          md:absolute md:left-0 md:h-full md:w-1/2
-        "
+        class="relative h-56 bg-primary-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
       >
         <img
           class="object-cover object-right w-full h-full"
@@ -169,39 +87,15 @@
           alt="Support team"
         />
         <div
-          class="
-            absolute
-            top-0
-            bottom-0
-            left-0
-            right-0
-            opacity-25
-            bg-primary-500
-          "
+          class="absolute top-0 bottom-0 left-0 right-0 opacity-25 bg-primary-500"
         ></div>
       </div>
       <div
-        class="
-          relative
-          max-w-screen-xl
-          px-4
-          py-12
-          mx-auto
-          sm:px-6
-          lg:px-8 lg:py-16
-        "
+        class="relative max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8 lg:py-16"
       >
         <div class="md:ml-auto md:w-1/2 md:pl-10">
           <h2
-            class="
-              mt-2
-              text-3xl
-              font-extrabold
-              leading-9
-              tracking-tight
-              text-white
-              sm:text-4xl sm:leading-10
-            "
+            class="mt-2 text-3xl font-extrabold leading-9 tracking-tight text-white sm:text-4xl sm:leading-10"
           >
             About me
           </h2>
@@ -229,15 +123,7 @@
       <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <h3
-            class="
-              mt-2
-              text-3xl
-              font-extrabold
-              leading-8
-              tracking-tight
-              text-gray-900
-              sm:text-4xl sm:leading-10
-            "
+            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
           >
             Portfolio
           </h3>
@@ -253,19 +139,7 @@
         v-for="project in projects"
         :key="project.image"
         :style="`background-image: url('${project.image}')`"
-        class="
-          w-full
-          h-64
-          mx-4
-          my-2
-          bg-cover
-          rounded-lg
-          shadow-md
-          sm:w-6/12
-          md:w-4/12
-          lg:w-3/12
-          sm:m-0 sm:shadow-none sm:rounded-none
-        "
+        class="w-full h-64 mx-4 my-2 bg-cover rounded-lg shadow-md sm:w-6/12 md:w-4/12 lg:w-3/12 sm:m-0 sm:shadow-none sm:rounded-none"
         @click="project.showCaption = true"
         @mouseover="project.showCaption = true"
         @mouseleave="project.showCaption = false"
@@ -285,29 +159,10 @@
               class="absolute w-full h-full"
             >
               <div
-                class="
-                  absolute
-                  w-full
-                  h-full
-                  rounded-lg
-                  bg-primary-700
-                  opacity-90
-                  sm:rounded-none
-                "
+                class="absolute w-full h-full rounded-lg bg-primary-700 opacity-90 sm:rounded-none"
               ></div>
               <div
-                class="
-                  absolute
-                  z-10
-                  flex flex-col
-                  items-center
-                  justify-center
-                  w-full
-                  h-full
-                  px-4
-                  text-center
-                  sm:px-6
-                "
+                class="absolute z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center sm:px-6"
               >
                 <h5 class="text-lg font-bold leading-6 text-white sm:text-2xl">
                   {{ project.client }}
@@ -317,14 +172,7 @@
                   {{ project.summary }}
                 </p>
                 <span
-                  class="
-                    mt-5
-                    text-white text-sm
-                    border border-solid
-                    px-4
-                    py-1.5
-                    rounded-md
-                  "
+                  class="mt-5 text-white text-sm border border-solid px-4 py-1.5 rounded-md"
                 >
                   View
                 </span>
@@ -340,15 +188,7 @@
       <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <h3
-            class="
-              mt-2
-              text-3xl
-              font-extrabold
-              leading-8
-              tracking-tight
-              text-gray-900
-              sm:text-4xl sm:leading-10
-            "
+            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
           >
             Get in touch
           </h3>
@@ -361,12 +201,7 @@
 
     <div class="my-8 sm:shadow-lg sm:mx-auto sm:w-full sm:max-w-md">
       <div
-        class="
-          px-4
-          py-8
-          bg-white
-          sm:border sm:border-gray-100 sm:shadow sm:rounded-lg sm:px-10
-        "
+        class="px-4 py-8 bg-white sm:border sm:border-gray-100 sm:shadow sm:rounded-lg sm:px-10"
       >
         <form action="https://formspree.io/mlenykay" method="POST">
           <div>
@@ -382,23 +217,7 @@
                 name="name"
                 type="text"
                 required
-                class="
-                  block
-                  w-full
-                  px-3
-                  py-2
-                  placeholder-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                  border border-gray-300
-                  rounded-md
-                  appearance-none
-                  focus:outline-none
-                  focus:shadow-outline-blue
-                  focus:border-blue-300
-                  sm:text-sm sm:leading-5
-                "
+                class="block w-full px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
               />
             </div>
           </div>
@@ -416,23 +235,7 @@
                 name="_replyto"
                 type="email"
                 required
-                class="
-                  block
-                  w-full
-                  px-3
-                  py-2
-                  placeholder-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                  border border-gray-300
-                  rounded-md
-                  appearance-none
-                  focus:outline-none
-                  focus:shadow-outline-blue
-                  focus:border-blue-300
-                  sm:text-sm sm:leading-5
-                "
+                class="block w-full px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
               />
             </div>
           </div>
@@ -450,23 +253,7 @@
                 name="message"
                 rows="4"
                 required
-                class="
-                  block
-                  w-full
-                  px-3
-                  py-2
-                  placeholder-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                  border border-gray-300
-                  rounded-md
-                  appearance-none
-                  focus:outline-none
-                  focus:shadow-outline-blue
-                  focus:border-blue-300
-                  sm:text-sm sm:leading-5
-                "
+                class="block w-full px-3 py-2 placeholder-gray-400 transition duration-150 ease-in-out border border-gray-300 rounded-md appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
               ></textarea>
             </div>
           </div>
@@ -475,27 +262,7 @@
             <span class="block w-full shadow-sm rounded-3xl">
               <button
                 type="submit"
-                class="
-                  flex
-                  justify-center
-                  w-full
-                  px-4
-                  py-2
-                  text-sm
-                  font-medium
-                  text-white
-                  transition
-                  duration-150
-                  ease-in-out
-                  border border-transparent
-                  rounded-3xl
-                  bg-primary-500
-                  hover:bg-primary-400
-                  focus:outline-none
-                  focus:border-primary-400
-                  focus:shadow-outline-primary
-                  active:bg-primary-400
-                "
+                class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out border border-transparent rounded-3xl bg-primary-500 hover:bg-primary-400 focus:outline-none focus:border-primary-400 focus:shadow-outline-primary active:bg-primary-400"
               >
                 Send
               </button>
@@ -546,7 +313,8 @@ export default {
           summary:
             'Visualising estimates of obstetric fistula prevalence based on an academic research paper.',
           image: '2.jpg',
-          href: 'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/EstimatedPrevalenceofObstetricFistulain19Sub-SaharanAfricanCountries/Estimateprevalence',
+          href:
+            'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/EstimatedPrevalenceofObstetricFistulain19Sub-SaharanAfricanCountries/Estimateprevalence',
         },
         {
           showCaption: false,
@@ -554,7 +322,8 @@ export default {
           summary:
             'Using Mapbox and Tableau to raise awareness of migrant deaths. Awarded “Viz of the Day”.',
           image: '3.png',
-          href: 'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MigrantdeathsanddisappearancesintheMediterranean/MigrantsintheMediterranean',
+          href:
+            'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MigrantdeathsanddisappearancesintheMediterranean/MigrantsintheMediterranean',
         },
         {
           showCaption: false,
@@ -562,7 +331,8 @@ export default {
           summary:
             'Provided design and technical guidance to the team visualising the results of the IT-trends survey.',
           image: '4.jpg',
-          href: 'https://public.tableau.com/profile/capgeminide#!/vizhome/IT-Trends_2018/ITTrendsStory',
+          href:
+            'https://public.tableau.com/profile/capgeminide#!/vizhome/IT-Trends_2018/ITTrendsStory',
         },
         {
           showCaption: false,
@@ -570,7 +340,8 @@ export default {
           summary:
             'Alteryx macro that uses an API to extract data from Airtable.',
           image: '5.png',
-          href: 'https://nalediholly.wordpress.com/2019/02/07/airtable-and-alteryx/',
+          href:
+            'https://nalediholly.wordpress.com/2019/02/07/airtable-and-alteryx/',
         },
         {
           showCaption: false,
@@ -578,7 +349,8 @@ export default {
           summary:
             'Interactive tool to explore where clinical data collection about obstetric fistula is most successful. ',
           image: '6.png',
-          href: 'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/Engagementinthefistulasector/Engagement',
+          href:
+            'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/Engagementinthefistulasector/Engagement',
         },
         {
           showCaption: false,
@@ -586,7 +358,8 @@ export default {
           summary:
             'Interactive visualisation exploring if countries are making progress towards more gender equality. ',
           image: '7.png',
-          href: 'https://data.em2030.org/2020-index-projections/data-explorer-global/',
+          href:
+            'https://data.em2030.org/2020-index-projections/data-explorer-global/',
         },
         {
           showCaption: false,
@@ -594,7 +367,8 @@ export default {
           summary:
             'Interactive tool to explore results from a survey looking at attitudes to discrimination.',
           image: '8.png',
-          href: 'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/PerceptionsofdiscriminationintheUSin2014/Perceptionsofdiscriminationsurveyresults',
+          href:
+            'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/PerceptionsofdiscriminationintheUSin2014/Perceptionsofdiscriminationsurveyresults',
         },
         {
           showCaption: false,
@@ -602,7 +376,8 @@ export default {
           summary:
             'Mobile-optimised visualisation exploring malaria trends in Africa. Awarded “Viz of the Day” and has over 67900 views to date.',
           image: '9.png',
-          href: 'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MakeoverMonday34Malaria/MalariainAfrica',
+          href:
+            'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MakeoverMonday34Malaria/MalariainAfrica',
         },
         {
           showCaption: false,
@@ -610,7 +385,8 @@ export default {
           summary:
             'Visualisation of complex data around policy makers’ knowledge on gender issues. Featured in the book “Makeover Monday”. ',
           image: '10.png',
-          href: 'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/Whatpolicymakersknowaboutwomensissues-MakeoverMonday102018/Whatdotheyknow',
+          href:
+            'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/Whatpolicymakersknowaboutwomensissues-MakeoverMonday102018/Whatdotheyknow',
         },
         {
           showCaption: false,
@@ -618,7 +394,8 @@ export default {
           summary:
             'An Alteryx macro that parses the XML of another workflow to extract a list of all tools utilised. ',
           image: '11.png',
-          href: 'https://gallery.alteryx.com/#!app/Extract-Alteryx-Tools-Macro/5aa941398a93373b041ae460',
+          href:
+            'https://gallery.alteryx.com/#!app/Extract-Alteryx-Tools-Macro/5aa941398a93373b041ae460',
         },
         {
           showCaption: false,
@@ -626,7 +403,8 @@ export default {
           summary:
             'Self-quantification project in which I recorded data about the books I read and presented these in an infographic style.',
           image: '12.png',
-          href: 'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MyYearInBooks/WhatIreadin2019',
+          href:
+            'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MyYearInBooks/WhatIreadin2019',
         },
       ],
     }
