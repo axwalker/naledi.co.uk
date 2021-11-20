@@ -3,7 +3,15 @@
     <div class="relative max-w-4xl mx-auto">
       <div>
         <h2
-          class="mt-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-5xl sm:leading-10"
+          class="
+            mt-6
+            text-3xl
+            font-extrabold
+            leading-9
+            tracking-tight
+            text-gray-900
+            sm:text-5xl sm:leading-10
+          "
         >
           Blog
         </h2>
@@ -36,7 +44,21 @@
                       category === $route.query.category ? undefined : category,
                   },
                 }"
-                class="my-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium mr-2 border transition transform hover:shadow-md hover:-translate-x-px hover:-translate-y-px"
+                class="
+                  my-2
+                  inline-flex
+                  items-center
+                  px-2.5
+                  py-0.5
+                  rounded-full
+                  text-xs
+                  font-medium
+                  mr-2
+                  border
+                  transition
+                  transform
+                  hover:shadow-md hover:-translate-x-px hover:-translate-y-px
+                "
                 :class="{
                   [`bg-${colours[category].colour}-100 text-${colours[category].colour}-800 border-${colours[category].colour}-300`]:
                     !$route.query.category ||

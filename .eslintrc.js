@@ -21,7 +21,7 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
-      }
-    ]
+      },
+    ],
   },
 }

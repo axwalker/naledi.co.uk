@@ -10,7 +10,16 @@
     >
       <div
         v-if="isZoomed"
-        class="fixed inset-0 z-50 flex flex-col items-center justify-center max-w-full max-h-full bg-gray-100 bg-opacity-50"
+        class="
+          fixed
+          inset-0
+          z-50
+          flex flex-col
+          items-center
+          justify-center
+          max-w-full max-h-full
+          bg-gray-100 bg-opacity-50
+        "
         style="backdrop-filter: blur(10px)"
         @click="isZoomed = !isZoomed"
       >

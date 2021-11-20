@@ -2,7 +2,14 @@
   <div class="relative z-30 bg-white">
     <div class="px-4 mx-auto max-w-7xl sm:px-6">
       <div
-        class="flex items-center justify-between py-6 border-gray-100 md:justify-start md:space-x-10"
+        class="
+          flex
+          items-center
+          justify-between
+          py-6
+          border-gray-100
+          md:justify-start md:space-x-10
+        "
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <nuxt-link to="/">
@@ -14,7 +21,20 @@
         <div class="-my-2 -mr-2 md:hidden">
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+            class="
+              inline-flex
+              items-center
+              justify-center
+              p-2
+              text-gray-400
+              bg-white
+              rounded-md
+              hover:text-gray-500 hover:bg-gray-100
+              focus:outline-none
+              focus:ring-2
+              focus:ring-inset
+              focus:ring-primary-500
+            "
             @click="isMobileMenuOpen = true"
           >
             <span class="sr-only">Open menu</span>
@@ -69,7 +89,13 @@
         <div class="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
           <nuxt-link
             to="/#contact"
-            class="text-base font-medium text-primary-700 whitespace-nowrap hover:text-primary-900"
+            class="
+              text-base
+              font-medium
+              text-primary-700
+              whitespace-nowrap
+              hover:text-primary-900
+            "
           >
             Get in touch
           </nuxt-link>
@@ -95,7 +121,16 @@
       x-transition:leave="duration-100 ease-in"
       x-transition:leave-start="opacity-100 scale-100"
       x-transition:leave-end="opacity-0 scale-95"
-      class="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
+      class="
+        absolute
+        inset-x-0
+        top-0
+        p-2
+        transition
+        origin-top-right
+        transform
+        md:hidden
+      "
     >
       <div class="rounded-lg shadow-md">
         <div class="overflow-hidden bg-white rounded-lg shadow-xs">
@@ -106,7 +141,19 @@
             <div class="-mr-2">
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  p-2
+                  text-gray-400
+                  transition
+                  duration-150
+                  ease-in-out
+                  rounded-md
+                  hover:text-gray-500 hover:bg-gray-100
+                  focus:outline-none focus:bg-gray-100 focus:text-gray-500
+                "
                 @click="isMobileMenuOpen = false"
               >
                 <svg
@@ -128,25 +175,80 @@
           <div class="px-2 pt-2 pb-3">
             <a
               href="/#services"
-              class="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
+              class="
+                block
+                px-3
+                py-2
+                text-base
+                font-medium
+                text-gray-700
+                transition
+                duration-150
+                ease-in-out
+                rounded-md
+                hover:text-gray-900 hover:bg-gray-50
+                focus:outline-none focus:text-gray-900 focus:bg-gray-50
+              "
             >
               Services
             </a>
             <a
               href="/#about-me"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
+              class="
+                block
+                px-3
+                py-2
+                mt-1
+                text-base
+                font-medium
+                text-gray-700
+                transition
+                duration-150
+                ease-in-out
+                rounded-md
+                hover:text-gray-900 hover:bg-gray-50
+                focus:outline-none focus:text-gray-900 focus:bg-gray-50
+              "
             >
               About me
             </a>
             <a
               href="/#portfolio"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
+              class="
+                block
+                px-3
+                py-2
+                mt-1
+                text-base
+                font-medium
+                text-gray-700
+                transition
+                duration-150
+                ease-in-out
+                rounded-md
+                hover:text-gray-900 hover:bg-gray-50
+                focus:outline-none focus:text-gray-900 focus:bg-gray-50
+              "
             >
               Portfolio
             </a>
             <nuxt-link
               :to="{ name: 'blog' }"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
+              class="
+                block
+                px-3
+                py-2
+                mt-1
+                text-base
+                font-medium
+                text-gray-700
+                transition
+                duration-150
+                ease-in-out
+                rounded-md
+                hover:text-gray-900 hover:bg-gray-50
+                focus:outline-none focus:text-gray-900 focus:bg-gray-50
+              "
             >
               Blog
             </nuxt-link>
@@ -154,7 +256,21 @@
           <div>
             <a
               href="/#contact"
-              class="block w-full px-5 py-3 font-medium text-center transition duration-150 ease-in-out text-primary-600 bg-gray-50 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:bg-gray-100 focus:text-primary-700"
+              class="
+                block
+                w-full
+                px-5
+                py-3
+                font-medium
+                text-center
+                transition
+                duration-150
+                ease-in-out
+                text-primary-600
+                bg-gray-50
+                hover:bg-gray-100 hover:text-primary-700
+                focus:outline-none focus:bg-gray-100 focus:text-primary-700
+              "
             >
               Get in touch
             </a>

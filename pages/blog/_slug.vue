@@ -11,7 +11,16 @@
       class="absolute inset-x-0 top-0 h-56 opacity-20 bg-gradient-to-r"
     />
     <div
-      class="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-transparent via-white to-white"
+      class="
+        absolute
+        inset-x-0
+        top-0
+        h-64
+        bg-gradient-to-b
+        from-transparent
+        via-white
+        to-white
+      "
     />
 
     <div
@@ -44,7 +53,17 @@
             <span
               v-for="(category, i) in page.categories || []"
               :key="category"
-              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium mr-2 border"
+              class="
+                inline-flex
+                items-center
+                px-2.5
+                py-0.5
+                rounded-full
+                text-xs
+                font-medium
+                mr-2
+                border
+              "
               :class="`bg-${colours[i]}-100 text-${colours[i]}-800 border-${colours[i]}-300`"
             >
               <n-icon :icon="icons[i]" class="inline-flex w-3 h-3 mr-1" />
@@ -52,7 +71,16 @@
             </span>
 
             <h1
-              class="mt-2 mb-2 text-3xl font-extrabold leading-8 tracking-tight text-left text-gray-900 sm:text-5xl"
+              class="
+                mt-2
+                mb-2
+                text-3xl
+                font-extrabold
+                leading-8
+                tracking-tight
+                text-left text-gray-900
+                sm:text-5xl
+              "
             >
               {{ page.title }}
             </h1>
@@ -88,7 +116,13 @@
           <a
             :href="linkedInShareUrl"
             target="_blank"
-            class="mb-px ml-4 text-gray-400 cursor-pointer hover:text-primary-500"
+            class="
+              mb-px
+              ml-4
+              text-gray-400
+              cursor-pointer
+              hover:text-primary-500
+            "
           >
             <span class="sr-only">LinkedIn </span>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +137,15 @@
 
         <div class="pt-6 border-t-2 border-gray-100">
           <h2
-            class="mt-3 text-xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-2xl"
+            class="
+              mt-3
+              text-xl
+              font-extrabold
+              leading-9
+              tracking-tight
+              text-gray-900
+              sm:text-2xl
+            "
           >
             Related posts
           </h2>
