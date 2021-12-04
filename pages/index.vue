@@ -20,8 +20,7 @@
             <span class="block text-primary-500"> Analytics Consultant </span>
           </h1>
           <p class="max-w-md mt-3 text-base text-gray-500 md:mt-5 md:max-w-3xl">
-            Collect, process, analyse and present data - from supporting every
-            day business decisions to fuelling global change.
+            Collect, process, analyse and present data - from supporting everyday business decisions to driving global change.
           </p>
           <div
             class="max-w-md mt-5 sm:flex md:justify-center md:mt-8 md:text-sm lg:text-base"
@@ -107,11 +106,10 @@
             preparation, analysis and management, all the way to impactful
             presentation of insights. I can support each step of the process to
             enable your organisation in making evidence-driven decisions or
-            share insights with new audiences. I also offer training in Tableau,
-            Alteryx, CommCare, Research Methods and Data Literacy.
+            share insights with new audiences. I also offer training in Tableau and data visualisation best practices.
           </p>
           <p class="mt-3 leading-7 text-primary-50 text-md">
-            I am available for short-term freelancing projects or on longer-term
+            I am available for short-term projects and longer-term
             consulting contracts.
           </p>
         </div>
@@ -282,19 +280,19 @@ export default {
         {
           name: 'Collect',
           description:
-            "I'm trained and highly experienced in questionnaire design, with a background in social psychology, and have worked with SNAP, Qualtrics, Commcare and Airtable to collect and process data.",
+            "I am trained and highly experienced in questionnaire design, with a background in social psychology, and have worked with Kobo Toolbox, Qualtrics, Commcare and Airtable to collect data.",
           image: '/collect.svg',
         },
         {
           name: 'Process',
           description:
-            'I am an Alteryx Designer Advanced Certified analyst. I offer support on existing workflows, creation of new processes and training at all levels covering data transformation, unification, spatial and predictive analysis, and more.',
+            'As an Alteryx Designer Advanced Certified analyst I can offer support on improving existing workflows and creation of new processes, covering data transformation, unification, spatial and predictive analysis, and more.',
           image: '/process.svg',
         },
         {
           name: 'Visualise',
           description:
-            'I am a Tableau Desktop Certified Professional who has worked with a diverse range of subjects. I have experience creating interactive tools and static infographics in Tableau that can be consumed online or in print.',
+            'I am a Tableau Desktop Certified Professional with extensive knowledge of data visualisation best-practices. I have experience creating interactive tools and static infographics that can be consumed online or in print.',
           image: '/visualise.svg',
         },
       ],
@@ -374,7 +372,7 @@ export default {
           showCaption: false,
           client: 'Personal Project',
           summary:
-            'Mobile-optimised visualisation exploring malaria trends in Africa. Awarded “Viz of the Day” and has over 67900 views to date.',
+            'Mobile-optimised visualisation exploring malaria trends in Africa. Awarded “Viz of the Day” and has over 70,000 views to date.',
           image: '9.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MakeoverMonday34Malaria/MalariainAfrica',
@@ -383,7 +381,7 @@ export default {
           showCaption: false,
           client: 'Personal Project',
           summary:
-            'Visualisation of complex data around policy makers’ knowledge on gender issues. Featured in the book “Makeover Monday”. ',
+            'Visualisation of complex data around policy makers’ knowledge on gender issues. Featured in the book “Makeover Monday”.',
           image: '10.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/Whatpolicymakersknowaboutwomensissues-MakeoverMonday102018/Whatdotheyknow',

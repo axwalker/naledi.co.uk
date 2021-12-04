@@ -61,7 +61,13 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    hotMiddleware: {
+      client: {
+        overlay: false,
+      }
+    }
+  },
 
   googleAnalytics: {
     id: 'UA-161391703-1',
