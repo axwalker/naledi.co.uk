@@ -20,7 +20,8 @@
             <span class="block text-primary-500"> Analytics Consultant </span>
           </h1>
           <p class="max-w-md mt-3 text-base text-gray-500 md:mt-5 md:max-w-3xl">
-            Collect, process, analyse and present data - from supporting everyday business decisions to driving global change.
+            Collect, process, analyse and present data - from supporting
+            everyday business decisions to driving global change.
           </p>
           <div
             class="max-w-md mt-5 sm:flex md:justify-center md:mt-8 md:text-sm lg:text-base"
@@ -106,11 +107,12 @@
             preparation, analysis and management, all the way to impactful
             presentation of insights. I can support each step of the process to
             enable your organisation in making evidence-driven decisions or
-            share insights with new audiences. I also offer training in Tableau and data visualisation best practices.
+            share insights with new audiences. I also offer training in Tableau
+            and data visualisation best practices.
           </p>
           <p class="mt-3 leading-7 text-primary-50 text-md">
-            I am available for short-term projects and longer-term
-            consulting contracts.
+            I am available for short-term projects and longer-term consulting
+            contracts.
           </p>
         </div>
       </div>
@@ -280,7 +282,7 @@ export default {
         {
           name: 'Collect',
           description:
-            "I am trained and highly experienced in questionnaire design, with a background in social psychology, and have worked with Kobo Toolbox, Qualtrics, Commcare and Airtable to collect data.",
+            'I am trained and highly experienced in questionnaire design, with a background in social psychology, and have worked with Kobo Toolbox, Qualtrics, Commcare and Airtable to collect data.',
           image: '/collect.svg',
         },
         {
