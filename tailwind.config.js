@@ -1,6 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
+
   purge: {
     content: [
       'pages/**/*.js',
@@ -11,9 +13,13 @@ module.exports = {
   },
 
   theme: {
+    screens: {
+      xs: '400px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['basic-sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
