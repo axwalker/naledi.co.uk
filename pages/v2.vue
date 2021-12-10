@@ -268,7 +268,7 @@
       <div class="constrained">
         <div class="flex flex-wrap items-center md:flex-nowrap">
           <img
-            src="naledi-crop.png"
+            src="/naledi-crop.png"
             class="object-contain w-64 mx-auto mb-12 mr-12"
           />
           <div>
@@ -431,7 +431,7 @@ export default {
           showCaption: false,
           client: 'Equal Measures 2030',
           summary: 'How well are countries meeting the needs of girls?',
-          image: '1.jpg',
+          image: '/1.jpg',
           href: 'https://data.em2030.org/key-groups/girls/',
         },
         {
@@ -439,7 +439,7 @@ export default {
           client: 'Operation Fistula',
           summary:
             'Visualising estimates of obstetric fistula prevalence based on an academic research paper.',
-          image: '2.jpg',
+          image: '/2.jpg',
           href:
             'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/EstimatedPrevalenceofObstetricFistulain19Sub-SaharanAfricanCountries/Estimateprevalence',
         },
@@ -448,7 +448,7 @@ export default {
           client: 'Personal Project',
           summary:
             'Using Mapbox and Tableau to raise awareness of migrant deaths. Awarded “Viz of the Day”.',
-          image: '3.png',
+          image: '/3.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MigrantdeathsanddisappearancesintheMediterranean/MigrantsintheMediterranean',
         },
@@ -457,7 +457,7 @@ export default {
           client: 'Capgemini',
           summary:
             'Provided design and technical guidance to the team visualising the results of the IT-trends survey.',
-          image: '4.jpg',
+          image: '/4.jpg',
           href:
             'https://public.tableau.com/profile/capgeminide#!/vizhome/IT-Trends_2018/ITTrendsStory',
         },
@@ -466,7 +466,7 @@ export default {
           client: 'Operation Fistula',
           summary:
             'Alteryx macro that uses an API to extract data from Airtable.',
-          image: '5.png',
+          image: '/5.png',
           href:
             'https://nalediholly.wordpress.com/2019/02/07/airtable-and-alteryx/',
         },
@@ -475,7 +475,7 @@ export default {
           client: 'Direct Relief',
           summary:
             'Interactive tool to explore where clinical data collection about obstetric fistula is most successful. ',
-          image: '6.png',
+          image: '/6.png',
           href:
             'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/Engagementinthefistulasector/Engagement',
         },
@@ -484,7 +484,7 @@ export default {
           client: 'Equal Measures 2030 ',
           summary:
             'Interactive visualisation exploring if countries are making progress towards more gender equality. ',
-          image: '7.png',
+          image: '/7.png',
           href:
             'https://data.em2030.org/2020-index-projections/data-explorer-global/',
         },
@@ -493,7 +493,7 @@ export default {
           client: 'Personal Project',
           summary:
             'Interactive tool to explore results from a survey looking at attitudes to discrimination.',
-          image: '8.png',
+          image: '/8.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/PerceptionsofdiscriminationintheUSin2014/Perceptionsofdiscriminationsurveyresults',
         },
@@ -502,7 +502,7 @@ export default {
           client: 'Personal Project',
           summary:
             'Mobile-optimised visualisation exploring malaria trends in Africa. Awarded “Viz of the Day” and has over 67900 views to date.',
-          image: '9.png',
+          image: '/9.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MakeoverMonday34Malaria/MalariainAfrica',
         },
@@ -511,7 +511,7 @@ export default {
           client: 'Personal Project',
           summary:
             'Visualisation of complex data around policy makers’ knowledge on gender issues. Featured in the book “Makeover Monday”. ',
-          image: '10.png',
+          image: '/10.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/Whatpolicymakersknowaboutwomensissues-MakeoverMonday102018/Whatdotheyknow',
         },
@@ -520,7 +520,7 @@ export default {
           client: 'Deloitte',
           summary:
             'An Alteryx macro that parses the XML of another workflow to extract a list of all tools utilised. ',
-          image: '11.png',
+          image: '/11.png',
           href:
             'https://gallery.alteryx.com/#!app/Extract-Alteryx-Tools-Macro/5aa941398a93373b041ae460',
         },
@@ -529,7 +529,7 @@ export default {
           client: 'Personal Project',
           summary:
             'Self-quantification project in which I recorded data about the books I read and presented these in an infographic style.',
-          image: '12.png',
+          image: '/12.png',
           href:
             'https://public.tableau.com/profile/naledi.hollbruegge#!/vizhome/MyYearInBooks/WhatIreadin2019',
         },
@@ -540,7 +540,7 @@ export default {
           summary: 'How well are countries meeting the needs of girls?',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus neque at ipsum condimentum posuere. Fusce dapibus mauris lacinia aliquet hendrerit. Nulla nisl massa, dictum sed leo et, fringilla sollicitudin nisi. Fusce augue tortor, ultrices et purus sed, pulvinar porta lectus. Aenean pretium tempus tellus a gravida. Vivamus ut turpis ante.',
-          image: '1.jpg',
+          image: '/1.jpg',
           href: 'https://data.em2030.org/key-groups/girls/',
         },
         {
@@ -549,7 +549,7 @@ export default {
             'Visualising estimates of obstetric fistula prevalence based on an academic research paper.',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus neque at ipsum condimentum posuere. Fusce dapibus mauris lacinia aliquet hendrerit. Nulla nisl massa, dictum sed leo et, fringilla sollicitudin nisi. Fusce augue tortor, ultrices et purus sed, pulvinar porta lectus. Aenean pretium tempus tellus a gravida. Vivamus ut turpis ante.',
-          image: '2.jpg',
+          image: '/2.jpg',
           href:
             'https://public.tableau.com/profile/operation.fistula6589#!/vizhome/EstimatedPrevalenceofObstetricFistulain19Sub-SaharanAfricanCountries/Estimateprevalence',
         },
