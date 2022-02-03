@@ -608,3 +608,9 @@ export default {
   transition-duration: 1ms;
 }
 </style>
+
+<style>
+body {
+  @apply bg-gray-50;
+}
+</style>
